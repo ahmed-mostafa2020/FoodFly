@@ -9,7 +9,12 @@ $(function(){
         $('.navbar .side-nav').css('left','-400px');
     });
 
-    //
+    //         to show instgram icon 
+    // $('.inst .box').hover(function(){
+    //     $('.inst .box a i').show(100);
+    // },function(){
+    //     $('.inst .box  i').hide(100);
+    // });
 
 
 

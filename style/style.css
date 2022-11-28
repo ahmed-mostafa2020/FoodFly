@@ -744,7 +744,7 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
   position: relative;
 }
 
-.art .card-body a.photo .test{
+.art .card-body a.photo .origin{
   perspective: 200px;
   height: 230px;
   overflow: hidden;
@@ -754,7 +754,7 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
   max-height: 230px;
   transition: all 0.5s ease-in-out;
 }
-.art .card-body a.photo .test:hover img{
+.art .card-body a.photo .origin:hover img{
   transform: translateZ(17px);
   filter: rgba(0, 0, 0, 0.5);
   filter: brightness(0.7);
@@ -841,12 +841,213 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
                                                   /* end art */
 
                                                   /* start instgram */
+.inst{
+  padding: 100px 0 50px 0;
+}
+.inst .heading{
+  text-align: center;
+  padding-bottom: 40px;
+}
 
+.inst .heading h3{
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(232, 0, 0, 1);
+}
+.inst .heading h2{
+  font-size: 40px;
+  font-weight: 500;
+  color: rgba(58, 58, 58, 1);
+  font-family: "Rubik", sans-serif;
+  line-height: 1.2;
+}
 
-
-
-
-
-
-                                                  
+.inst .box{
+  padding-bottom: 20px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.inst .box img{
+  border-radius: 20px;
+  height: 247.5px;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.inst .box:hover img{
+  filter: brightness(1.12);
+}
+/* .inst .box a i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  font-size: 35px;
+  display: none;
+} */
+/* .inst .box:hover i{
+  display: block;
+} */
+                                                
                                                   /* end instgram */
+
+                                                  /* start footer */
+footer{
+  background-image: url(imgs/footer_wave_bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top ;
+  padding-top: 140px;
+  color: #fff;
+}
+footer .footer-box{
+  padding-bottom: 40px;
+}
+footer .footer-box .footer-upper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.2) ;
+  margin-bottom: 85px;
+}    
+footer .footer-box .footer-upper .site-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}                                              
+
+footer .footer-box .footer-upper .site-info ul li{
+  display: inline-block;
+}
+footer .footer-box .footer-upper .site-info ul li:first-of-type{
+  margin-right: 20px;
+}
+footer .footer-box .footer-upper .site-info ul li a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+footer .footer-box .footer-upper .site-info ul li a:hover{
+  color: rgba(232, 0, 0, 1);
+}
+
+footer .footer-box .footer-upper .site-phone{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
+footer .footer-box .footer-upper .site-phone .phone{
+  min-height: 50px;
+  min-width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(251, 173, 65, 1);
+  color: #fff;
+  font-size: 23px;
+  margin-right: 15px;
+}
+footer .footer-box .footer-upper .site-phone .number h4{
+  font-family: Karla;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 0;
+}
+footer .footer-box .footer-upper .site-phone .number p{
+  font-family: Rubik;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+
+footer .footer-box .footer-lower{
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+  footer{
+    padding-top: 80px;
+  }
+  footer .footer-box .footer-top{
+    display: block;
+  } 
+  footer .footer-box .footer-top .site-logo{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  footer .footer-box .footer-top .site-info{
+    justify-content: space-between;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  /* end footer */
