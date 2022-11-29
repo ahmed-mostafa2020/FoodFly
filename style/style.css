@@ -105,6 +105,9 @@ header .topbar .topbar-right ul li:first-child::after{
 .navbar nav .main-nav-menu ul{
   margin: 0;
 }
+.navbar nav .main-nav-menu ul li{
+  position: relative;
+}
 .navbar nav .main-nav-menu ul a{
   text-decoration: none;
   color: rgba(112, 112, 112, 1);
@@ -115,7 +118,7 @@ header .topbar .topbar-right ul li:first-child::after{
 .navbar nav .main-nav-menu ul li a:hover{
   color: rgba(232, 0, 0, 1);
 }
-.navbar nav .main-nav-menu ul li{
+.navbar nav .main-nav-menu>ul>li{
   display: inline-block;
   margin-right: 35px;
   padding: 36px 0;
@@ -123,6 +126,46 @@ header .topbar .topbar-right ul li:first-child::after{
 }
 .navbar nav .main-nav-menu ul li i{
   font-size: 25px;
+}
+
+.navbar nav .main-nav-menu ul li ul.drop-list{
+  padding: 15px 0;
+  position: absolute;
+  top: 115%;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  transition: all 0.5s ease-in-out;
+  border-radius: 0.25rem;
+  min-width: 220px;
+  box-shadow: 0 5px 10px #14303a15;
+  z-index: 2222;
+  /* display: block !important; */
+}
+.navbar nav .main-nav-menu ul li  ul.drop-list li{
+  /* display: block;
+  position: relative;
+  margin-right: 0;*/
+  line-height: 36px; 
+}
+.navbar nav .main-nav-menu ul li  ul.drop-list li a{
+  text-decoration: none;
+  font-size: 16px;
+  padding: 5px 20px;
+  /* display: block; */
+  line-height: 1.4;
+  color: #464A56;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+.navbar nav .main-nav-menu ul li  ul.drop-list li a:hover{
+  color: rgba(232, 0, 0, 1);
+}
+
+.navbar nav .main-nav-menu ul li:hover ul.drop-list{
+  opacity: 1;
+  visibility: visible;
 }
 
 .navbar nav .main-nav .burger-icon{
@@ -193,12 +236,28 @@ header .topbar .topbar-right ul li:first-child::after{
   border-radius: 50%;
   background-color: rgba(5, 120, 5, 1);
   color: rgba(255, 255, 255, 1);
+  position: relative;
 }
 .navbar nav .main-nav .cart-icons ul li:first-child{
   margin: 0 10px 0 6px;
 }
 .navbar nav .main-nav .cart-icons ul li i{
   line-height: 38px;
+}
+.navbar nav .main-nav .cart-icons ul li a span{
+  position: absolute;
+  right: -9px;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  font-size: 11px;
+  background-color: rgba(232, 0, 0, 1);
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+
 }
 
 .navbar .side-nav{
@@ -320,6 +379,7 @@ main .mentor-main .btn{
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 main .mentor-main .btn:first-of-type{
   background-color: rgba(232, 0, 0, 1);
@@ -482,6 +542,7 @@ main .mentor-main .btn:last-of-type a{
   justify-content: center;
   align-items: center;
   box-shadow: 0 40px 60px rgba(207, 20, 34, 0.15);
+  transition: all 0.3s ease-in-out;
 }
 .feature .menu .text-col .btn a{
   text-decoration: none;
@@ -515,6 +576,182 @@ main .mentor-main .btn:last-of-type a{
 }
 
                                                   /* end feature */
+
+                                                  /* start tabes */
+.tabes{
+  background-color: rgba(251, 173, 65, 1);
+  padding: 110px 0;
+}                                                  
+.tabes .heading{
+  text-align: center;
+  padding-bottom: 40px;
+}
+.tabes .heading h3{
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+.tabes .heading h2{
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  line-height: 1.2;
+}
+
+.tabes ul.btn-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+.tabes ul.btn-list li{
+  display: inline-block;
+  width: 160px;
+  height: 50px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #fff;
+  line-height: 45px;
+  transform: skew(-20deg);
+  transition: all 500ms ease-in-out;
+  margin: 0 10px 20px;
+  cursor: pointer;
+}
+.tabes ul.btn-list li a{
+  text-decoration: none;
+  color: #fff;
+  font-family: "Karla", Sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+.tabes ul.btn-list li.active,.tabes ul.btn-list li:hover {
+  background-color: rgba(232, 0, 0, 1);
+  border: 1px solid rgba(232, 0, 0, 1);
+  box-shadow: 0 35px 60px rgba(232, 0, 0, 0.25) ;
+}
+
+.tabes .cards .card-body{
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 33px 0 20px 0px;
+  margin-bottom: 20px;
+  text-align: center;
+  transition: all 500ms ease-in-out;
+}
+.tabes .cards .card-body:hover{
+  box-shadow: 30px 30px 80px rgba(41, 5, 5, 0.25);
+}
+.tabes .cards .card-body>a img{
+  height: 170px;
+  width: 170px;
+  margin-bottom: 20px;
+  transition: all 300ms ease-in-out;
+}
+.tabes .cards .card-body img:hover{
+  box-shadow: 15px 20px 60px rgba(51, 29, 0, 0.2);
+}
+.tabes .cards .card-body .card-content a{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(41, 5, 5, 1);
+  transition: all 300ms ease-in-out;
+}
+.tabes .cards .card-body .card-content a:hover{
+  color: rgba(232, 0, 0, 1);
+}
+
+.tabes .cards .card-body .card-content ul.stars{
+  margin-top: 12px;
+  margin-bottom: 15px;
+}
+.tabes .cards .card-body .card-content ul.stars li{
+  display: inline-block;
+}
+.tabes .cards .card-body .card-content ul.stars li i{
+  color: rgba(0, 0, 0, 0.16);
+}
+.tabes .cards .card-body .card-content ul.stars li span{
+  color: rgba(58, 58, 58, 1);
+}
+
+.tabes .cards .card-body .card-content ul.price li{
+  margin-bottom: 13px;
+}
+.tabes .cards .card-body .card-content ul.price li p.title{
+  color: rgba(58, 58, 58, 1);
+  font-size: 15px;
+  font-family: "Karla", Sans-serif;
+  width: 80%;
+  margin: 0 auto;
+}
+.tabes .cards .card-body .card-content ul.price li del{
+  font-size: 15px;
+  color: rgba(58, 58, 58, 1);
+  font-family: "Karla", Sans-serif;
+  font-weight: 500;
+}
+.tabes .cards .card-body .card-content ul.price li p.disc{
+  font-size: 22px;
+  color: rgba(232, 0, 0, 1);
+  font-weight: bolder;
+  margin: 0 0 0 5px;
+  display: inline-block;
+  font-family: "Rubik", sans-serif;
+}
+
+.tabes .cards .card-body .card-content ul.price li .btn{
+  border-radius: 30px;
+  height: 50px;
+  width: 155px;
+  margin: 0 auto;
+  background-color: transparent;
+  border: 1px solid rgba(5, 120, 5, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.tabes .cards .card-body .card-content ul.price li .btn a{
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;  
+  color: rgba(5, 120, 5, 1);
+  font-weight: 200;
+  font-size: 18px;
+  font-family: "Karla", Sans-serif;
+}
+.tabes .cards .card-body .card-content ul.price li .btn:hover{
+  background-color: rgba(5, 120, 5, 1);
+  box-shadow: 0 40px 60px rgba(5, 120, 5, 0.15);
+}
+.tabes .cards .card-body .card-content ul.price li .btn:hover a{
+  color: #fff;
+}
+.tabes .cards .card-body .card-content ul.price li .btn a>i{
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  /* end tabes */
+
 
                                                   /* start how */
 .how {
@@ -589,6 +826,7 @@ main .mentor-main .btn:last-of-type a{
   justify-content: center;
   align-items: center;
   box-shadow: 0 40px 60px rgba(5, 120, 5, 0.15);
+  transition: all 0.3s ease-in-out;
 }
 .how .menu .text-col .btn a{
   text-decoration: none;
@@ -731,6 +969,7 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
   justify-content: center;
   align-items: center;
   box-shadow: 0 40px 60px rgba(5, 120, 5, 0.15);
+  transition: all 0.3s ease-in-out;
 }
 .offer .content1 .btn a ,.content2 .btn a{
   text-decoration: none;
@@ -748,7 +987,6 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
 
 
 
-  
 }
 
                                                   /* end offer */

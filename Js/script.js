@@ -25,6 +25,15 @@ $(function(){
     });
 
 
+    //
+
+
+
+
+
+    
+
+
 
     //         to show instgram icon 
     // $('.inst .box').hover(function(){
@@ -40,6 +49,3 @@ $(function(){
 });
 
 
-// $(document).ready(function(){
-    
-// });
