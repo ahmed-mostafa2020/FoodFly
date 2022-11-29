@@ -290,11 +290,11 @@ header .topbar .topbar-right ul li:first-child::after{
   color: #051441;
   font-size: 30px;
   cursor: pointer;
+  background: rgba(136, 136, 136, 0.04);
   transition: all 0.3s ease-in-out;
 }
 .navbar .side-nav .side-nav-header .close-menu:hover{
   background: rgba(136, 136, 136, 0.1);
-  color: red;
 }
 .navbar .side-nav .side-nav-menu ul{
   margin: 20px 0 0 0;
@@ -376,6 +376,7 @@ main .mentor-main .btn{
   height: 55px;
   width: 185px;
   border: 2px solid rgba(232, 0, 0, 1);
+  margin-bottom: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -615,7 +616,7 @@ main .mentor-main .btn:last-of-type a{
   border: 1px solid #fff;
   line-height: 45px;
   transform: skew(-20deg);
-  transition: all 500ms ease-in-out;
+  transition: all 400ms ease-in-out;
   margin: 0 10px 20px;
   cursor: pointer;
 }
@@ -672,6 +673,9 @@ main .mentor-main .btn:last-of-type a{
 }
 .tabes .cards .card-body .card-content ul.stars li i{
   color: rgba(0, 0, 0, 0.16);
+}
+.tabes .cards .card-body .card-content ul.stars li i.checked{
+  color: #FBAD41;
 }
 .tabes .cards .card-body .card-content ul.stars li span{
   color: rgba(58, 58, 58, 1);
@@ -735,34 +739,17 @@ main .mentor-main .btn:last-of-type a{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                                   /* end tabes */
 
 
                                                   /* start how */
-.how {
-  /* padding: 110px 0 110px 0; */
-}
+
 .how .container{
   padding: 0;
 }
 .how .menu{
   padding: 110px 0 90px 0;
-  height: 1050px;
+  min-height: 1050px;
 } 
 .how .menu .text-col{
   padding: 10px 30px 0px 0px;
@@ -888,7 +875,7 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
                                                   /* start offer */
 
 .offer {
-  padding: 100px 0;
+  padding: 30px 0;
 }
 .offer .container{
   padding: 0;
@@ -1265,10 +1252,6 @@ footer .footer-box .footer-upper .site-phone .number p{
   margin-bottom: 0;
 }
 
-
-footer .footer-box .footer-lower{
-  
-}
 footer .footer-box .footer-lower .links{
   margin-bottom: 30px;
 }

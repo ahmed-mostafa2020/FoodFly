@@ -25,13 +25,18 @@ $(function(){
     });
 
 
-    //
-
-
-
-
-
+    //tabes 
+    $('.tabes ul.btn-list').on('click','li' ,function (e) {
+        e.preventDefault();
+        $(this).addClass('active').siblings().removeClass('active');
+    });
     
+
+
+
+
+
+
 
 
 
