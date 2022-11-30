@@ -9,7 +9,6 @@ theme coder :Ahmed Mostafa
   padding: 0;
 }
 body {
-  height: 9000px;
 }
 ul{
   margin: 0;
@@ -131,7 +130,7 @@ header .topbar .topbar-right ul li:first-child::after{
 .navbar nav .main-nav-menu ul li ul.drop-list{
   padding: 15px 0;
   position: absolute;
-  top: 115%;
+  top: 90%;
   left: 0;
   opacity: 0;
   visibility: hidden;
@@ -581,7 +580,7 @@ main .mentor-main .btn:last-of-type a{
                                                   /* start tabes */
 .tabes{
   background-color: rgba(251, 173, 65, 1);
-  padding: 110px 0;
+  padding: 90px 0;
 }                                                  
 .tabes .heading{
   text-align: center;
@@ -884,7 +883,92 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
 
                                                   /* end how */
 
-                                                  /* end testimonials */
+                                                  /* start testimonials */
+
+.testimonial{
+  background-image: url(imgs/testimonial_bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px 0;
+
+}   
+.testimonial .container{
+  padding: 120px 0;
+}                                        
+.testimonial .heading{
+  text-align: center;
+}
+.testimonial .heading h3{
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.testimonial .heading h2{
+  font-size: 40px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Rubik", sans-serif;
+  /* font-family: 'Karla', sans-serif; */
+  line-height: 1.2;
+}
+
+.testimonial .slider .card-body{
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+  border-radius: 25px;
+  margin: 30px 0 30px 0;
+  padding: 25px 40px 40px 40px;
+  text-align: left;
+  /* user-select: none; */
+}
+.testimonial .slider .card-body:hover{
+  box-shadow: 25px 80px 99px #29050540;
+}
+
+.testimonial .slider .card-body .icons{
+  font-size: 60px;
+  color: #45484c;
+}
+.testimonial .slider .card-body p{
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+.testimonial .slider .card-body ul.stars{
+  margin-top: 15px;
+  margin-bottom: 12px;
+}
+.testimonial .slider .card-body ul.stars li{
+  display: inline-block;
+}
+.testimonial .slider .card-body ul.stars li i{
+  color: rgba(0, 0, 0, 0.16);
+  font-size: 20px;
+}
+.testimonial .slider .card-body ul.stars li i.checked{
+  color: #FBAD41;
+}
+
+.testimonial .slider .card-body .customer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.testimonial .slider .card-body .customer p{
+  margin: 0 0 0 8px ;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Karla", Sans-serif;
+  color: #4a5156;
+}
+.testimonial .slider .card-body .customer p span{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #585f64;
+}
 
 
 
@@ -904,19 +988,12 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
 
 
 
-
-
-
-
-
-
-                                                  
                                                   /* end testimonials */
 
                                                   /* start offer */
 
 .offer {
-  padding: 30px 0;
+  padding: 110px 0;
 }
 .offer .container{
   padding: 0;
