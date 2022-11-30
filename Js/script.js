@@ -25,19 +25,38 @@ $(function(){
     });
 
 
-    //tabes 
+    //tabes show up $ hide
     $('.tabes ul.btn-list').on('click','li' ,function (e) {
+
         e.preventDefault();
         $(this).addClass('active').siblings().removeClass('active');
+
+        if ($(this).data('content') === 'All') {
+            $('.tabes .cards .box').fadeIn(500);
+            $('.tabes .cards .row').css('height','auto');
+        }
+        else {
+            $('.tabes .cards .row').css('height','480px');
+
+            $('.tabes .cards div.card-body').not($($(this).data('content'))).parent().fadeOut(400);
+            $($(this).data('content')).parent().fadeIn(500);
+          }
+
     });
+
+    //
+
+
+
+
+
+
+
+
+
+
+
     
-
-
-
-
-
-
-
 
 
     //         to show instgram icon 
