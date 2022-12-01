@@ -67,10 +67,19 @@ header .topbar .topbar-right ul li:first-child::after{
   margin: 0 21px;
 }
 @media (max-width: 576px) { 
-
+  header{
+    padding: 10px 0px;
+  }
+  header .topbar .topbar-right{
+    margin-left: 7px;
+  }
+  header .topbar .topbar-left ul li:first-child{
+    margin-right: 0;
+  }
+  header .topbar .topbar-right ul li:first-child::after{
+    display: none;
+  }
 }
-
-
 
 
                                                   /* start header */
@@ -260,7 +269,6 @@ header .topbar .topbar-right ul li:first-child::after{
   font-weight: 700;
   line-height: 20px;
   text-align: center;
-
 }
 
 .navbar .side-nav{
@@ -329,7 +337,9 @@ header .topbar .topbar-right ul li:first-child::after{
   }
 }
 @media (max-width: 576px) { 
-
+  .navbar nav .site-logo img{
+    max-width: 100%;
+  }
 }
 
                                                   /* end navbar */
@@ -426,7 +436,7 @@ main .mentor-main .btn:last-of-type a{
   }
   main .mentor-main{
     width: 100%;
-    padding: 110px 0 130px 0;
+    padding: 90px 0 90px 0;
   }
   main .mentor-main h2{
     font-size: 45px;
@@ -567,12 +577,20 @@ main .mentor-main .btn:last-of-type a{
  }
 
 @media (max-width: 576px) { 
+  .feature{
+    padding-bottom: 70px;
+  }
+  .feature .icons{
+    padding-top: 30px;
+  }
   .feature .menu .text-col{
     padding-left: 30px;
   }
   .feature .menu .img-col .large{
-    right: 5px;
-    padding-bottom: 60px;
+    right: 12px;
+    padding-bottom: 30px;
+    max-width: 94%;
+    max-height: 94%;
   }
   .feature .menu .img-col .small{
     display:  none;
@@ -750,7 +768,14 @@ main .mentor-main .btn:last-of-type a{
   font-size: 20px;
 }
 
-
+@media (max-width: 576px) { 
+  .tabes{
+    padding: 70px 0;
+  }
+  .tabes .cards .card-body .card-content ul.price li p.title{
+    width: 100%;
+  }
+}
 
                                                   /* end tabes */
 
@@ -869,16 +894,26 @@ z-index: 2;
 border-radius: 55px;
 box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
 }
+@media (max-width: 992px) { 
+  .how .menu .text-col h2{
+    font-size: 32px;
+  }
+}
 @media (max-width: 576px) { 
   .how .container{
     padding: 0 15px;
   }
+  .how .menu{
+    padding: 70px 0;
+  } 
   .how .menu .text-col{
     padding-left: 30px;
   }
   .how .menu .img-col .large{
-    right: 5px;
-    padding-bottom: 60px;
+    max-width: 94%;
+    max-height: 94%;
+    right: 12px;
+    padding-bottom: 0px;
   }
   .how .menu .img-col .small{
     display:  none;
@@ -974,7 +1009,11 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
   color: #585f64;
 }
 
-
+@media (max-width: 576px) { 
+  .testimonial .heading h2{
+    font-size: 32px;
+  }
+}
 
 
 
@@ -1014,7 +1053,7 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
   background-size: cover;
   text-align: left;
   padding: 100px 70px;
-  border-radius: 50px;
+  border-radius: 55px;
   /* width: 600px; */
   position: relative;
   overflow: hidden;
@@ -1057,6 +1096,7 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
   font-weight: 700;
   font-family: "Rubik", sans-serif;
   letter-spacing: 2px;
+  margin-bottom: 10px;
 } 
 .offer .content1 h2 ,.content2 h2{
   color: #fff;
@@ -1089,13 +1129,24 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
   background-color: transparent;
   box-shadow: none;
 }
+@media (max-width: 768px) { 
+  .offer .content1 h2,.content2 h2{
+    font-size: 36px;
+  }
+}
 @media (max-width: 576px) { 
+  .offer{
+    padding: 40px 0;
+  }
   .offer .container{
     padding: 15px;
   }
-
-
-
+  .offer .content1,.content2{
+    padding: 60px 40px;
+  }
+  .offer  .content1::before ,.content2::before{
+    display: none;
+  }
 }
 
                                                   /* end offer */
@@ -1118,6 +1169,7 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
   font-size: 18px;
   font-weight: 500;
   color: rgba(232, 0, 0, 1);
+  margin-bottom: 15px;
 }
 .art .heading h2{
   font-size: 40px;
@@ -1235,9 +1287,15 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
 .art .card-body .card-content .read a i{
   font-size: 20px;
 }
+
+@media (max-width: 992px) { 
+  .art .heading h2{
+    font-size: 32px;
+  }
+}
 @media (max-width: 576px) { 
   .art .container{
-    padding: 100px 15px;
+    padding: 80px 15px;
   }
 }
 
@@ -1256,6 +1314,7 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
   font-size: 18px;
   font-weight: 500;
   color: rgba(232, 0, 0, 1);
+  margin-bottom: 15px;
 }
 .inst .heading h2{
   font-size: 40px;
@@ -1291,6 +1350,13 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
 /* .inst .box:hover i{
   display: block;
 } */
+
+@media (max-width: 576px) { 
+  .inst .heading h2{
+    font-size: 32px;
+
+  }
+}
                                                 
                                                   /* end instgram */
 
