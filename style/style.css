@@ -934,7 +934,10 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
 }   
 .testimonial .container{
   padding: 120px 0;
-}                                        
+}    
+.testimonial .slider{
+  margin: 0;
+}                                    
 .testimonial .heading{
   text-align: center;
 }
@@ -953,17 +956,19 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
   line-height: 1.2;
 }
 
+.testimonial .slider {
+  padding: 0 25px;
+}
 .testimonial .slider .card-body{
   background: #fff;
   transition: all 0.3s ease-in-out;
   border-radius: 25px;
-  margin: 30px 0 30px 0;
+  margin: 40px 0;
   padding: 25px 40px 40px 40px;
   text-align: left;
-  /* user-select: none; */
 }
 .testimonial .slider .card-body:hover{
-  box-shadow: 25px 80px 99px #29050540;
+  /* box-shadow: 10px 15px 10px #29050540; */
 }
 
 .testimonial .slider .card-body .icons{
@@ -995,6 +1000,11 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
   justify-content: flex-start;
   align-items: center;
 }
+.testimonial .slider .card-body .customer img{
+  max-width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
 .testimonial .slider .card-body .customer p{
   margin: 0 0 0 8px ;
   font-size: 16px;
@@ -1009,26 +1019,39 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
   color: #585f64;
 }
 
+.owl-nav{
+  display: none;
+}
+.owl-dots{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  padding-top: 15px;
+}
+.owl-carousel button.owl-dot{
+  outline: none !important;
+}
+.owl-theme .owl-dots .owl-dot.active span{
+  width: 25px !important;
+  border-radius: 10px !important;
+  opacity: 1 !important;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background: #fbad41 !important;
+  opacity: 0.25 !important;
+  transition: all 0.3s ease-in-out !important;
+  margin: 0 5px !important;
+  height: 15px !important;
+  width: 15px !important;
+  border-radius: 50%;
+}
+
 @media (max-width: 576px) { 
   .testimonial .heading h2{
     font-size: 32px;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                                                   /* end testimonials */
@@ -1303,7 +1326,7 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
 
                                                   /* start instgram */
 .inst{
-  padding: 100px 0 50px 0;
+  padding: 100px 0;
 }
 .inst .heading{
   text-align: center;
