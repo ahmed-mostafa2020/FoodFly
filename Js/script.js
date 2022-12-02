@@ -41,10 +41,18 @@ $(function(){
         }
     });
 
+    
+
     //close side-nav
     $('.navbar .side-nav .side-nav-header').on('click','.close-menu',function(){
         $('.navbar .side-nav').css('left','-400px');
     });
+
+    document.onclick = function(e){
+        if(e.target.className !== 'side-nav' && e.target.className !== 'burger-icon'){ 
+            $('.navbar .side-nav').css('left','-400px');
+        }
+    }
 
 
     //tabes show up $ hide
