@@ -578,7 +578,7 @@ main .mentor-main .btn:last-of-type a{
 
 @media (max-width: 576px) { 
   .feature{
-    padding-bottom: 70px;
+    padding-bottom: 0px;
   }
   .feature .icons{
     padding-top: 30px;
@@ -601,8 +601,12 @@ main .mentor-main .btn:last-of-type a{
 
                                                   /* start tabes */
 .tabes{
-  background-color: rgba(251, 173, 65, 1);
-  padding: 90px 0;
+  /* background-color: rgba(251, 173, 65, 1); */
+  background-image: url(imgs/bg.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 140px 0;
 }                                                  
 .tabes .heading{
   text-align: center;
@@ -770,7 +774,7 @@ main .mentor-main .btn:last-of-type a{
 
 @media (max-width: 576px) { 
   .tabes{
-    padding: 70px 0;
+    padding: 180px 0 70px 0;
   }
   .tabes .cards .card-body .card-content ul.price li p.title{
     width: 100%;
@@ -822,7 +826,12 @@ main .mentor-main .btn:last-of-type a{
 }
 .how .menu .text-col ul li{
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
+}
+.how .menu .text-col ul li img{
+  width: 45px;
+  height: 45px;
+  margin-right: 10px;
 }
 .how .menu .text-col ul li h3{
   font-family: "Rubik", Sans-serif;

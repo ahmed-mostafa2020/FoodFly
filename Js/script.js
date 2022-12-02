@@ -24,7 +24,6 @@ $(function(){
             }
         }
     });
-    
 
 
     // open & close side-nav from burger icon
