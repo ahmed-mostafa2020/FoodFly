@@ -4,8 +4,8 @@ $(function(){
     'use strict';
     // $('html').niceScroll();
 
-    //calling owl plugin
-    $('.owl-carousel').owlCarousel({
+    //calling owl plugin slider
+    $('.testimonial .owl-carousel',).owlCarousel({
         loop:true,
         margin:25,
         nav:true,
@@ -21,6 +21,30 @@ $(function(){
             },
             1000:{
                 items:3
+            }
+        }
+    });
+
+    //calling owl plugin partner sec in testimonial page 
+    $('.partner .owl-carousel').owlCarousel({
+        loop:true,
+        margin:40,
+        nav:true,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true,
+        slideTransition: 'linear',
+        smartSpeed: 6500,
+        center: true,
+        responsive:{
+            0:{
+                items:3
+            },
+            600:{
+                items:3.5
+            },
+            1000:{
+                items:5
             }
         }
     });
