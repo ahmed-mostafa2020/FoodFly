@@ -25,6 +25,11 @@ ul{
   font-family: 'Amita', cursive;
  */
 
+
+       /* ***************************************start home page**************************************** */
+
+
+
                                                    /* start header */
 header{
   background-color: rgba(255, 247, 235, 1);
@@ -1395,11 +1400,17 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
                                                   /* start footer */
 footer{
   background-image: url(imgs/footer_wave_bg.svg);
+  padding-top: 140px;
+}                                                  
+footer,.footer-2{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top ;
-  padding-top: 140px;
   color: #fff;
+}
+.footer-2{
+  background-image: url(imgs/your-image-here-3.png);
+  padding-top: 160px;
 }
 footer .footer-box{
   padding-bottom: 40px;
@@ -1537,8 +1548,8 @@ footer .tail-bar p{
   margin-bottom: 0;
 }
 
-@media (max-width: 576px) {
-  footer{
+@media(max-width:768px){
+  footer,.footer-2{
     padding-top: 80px;
   }
   footer .footer-box .footer-upper{
@@ -1551,6 +1562,9 @@ footer .tail-bar p{
   footer .footer-box .footer-upper .site-info{
     justify-content: space-between;
   }
+}
+
+@media (max-width: 576px) {
   footer .footer-box .footer-lower .links {
     margin-bottom: 35px;
     padding-left: 20px;
@@ -1561,3 +1575,181 @@ footer .tail-bar p{
 }
 
                                                   /* end footer */
+
+
+
+      /* ***************************************end home page**************************************** */
+
+
+
+      /* ***************************************start about page**************************************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  /* start download */
+.download .contain{
+  background-image: url(imgs/background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0 70px;
+  border-radius: 50px;
+  position: relative;
+  z-index: 2;
+  margin: 30px auto -70px auto;
+  width: 100%;
+  height: 100%;
+}
+.download .box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+.download .box .content{
+  text-align: left;
+  width: 50%;
+}
+.download .box .content p{
+  color: #E80000;
+  font-family: "Amita", Sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+.download .box .content h4{
+  color: #3A3A3A;
+  font-family: "Rubik", Sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38px;
+  width: 80%;
+}
+
+.download .box .content .app-btn{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.download .box .content .app-btn a{
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #000;
+  border-radius: 6px;
+  display: inline-block;
+  background-color: #000;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
+.download .box .content .app-btn a:first-of-type{
+  padding: 5px 20px 5px 12px;
+}
+.download .box .content .app-btn a:last-of-type{
+  padding: 5px 27px 5px 12px;
+}
+.download .box .content .app-btn a:hover .text p{
+  color: rgba(232, 0, 0, 1);
+}
+.download .box .content .app-btn a .text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.download .box .content .app-btn a .text i{
+  font-size: 40px;
+  margin-right: 10px;
+}
+.download .box .content .app-btn a .text p{
+  margin: 0;
+  color: #fff;
+  font-size: 11px;
+  font-weight: 100;
+  line-height: 1;
+  font-family: "Rubik", Sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+.download .box .content .app-btn a .text p span{
+  line-height: 1.2;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+}
+
+.download .box .image{
+  width: 50%;
+}
+.download .box .image img{
+  width: 537px;
+  height: 403px;
+}
+
+@media (max-width: 992px) { 
+  .download .box{
+    padding-top: 100px ;
+    padding-bottom: 100px ;
+  }
+  .download .box .content h4{
+    width: 100%;
+    font-size: 26px;
+  }
+  .download .box .image{
+    display: none;
+  }
+  .download .box .content{
+    width: 100%;
+  }
+ }
+ @media (max-width: 768px) { 
+  .download .contain{
+    padding:  60px 0;
+    margin-bottom: 80px;
+  }
+  .download .box{
+   padding: 0 40px;
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  /* end download */
+
+
+
+      /* ***************************************end about page**************************************** */
