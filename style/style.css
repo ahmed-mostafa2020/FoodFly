@@ -1663,12 +1663,131 @@ footer .tail-bar p{
                                                   /* end about-lable */
 
                                                   /* start vision */
+.vision{
+  padding: 100px 0 80px;
+}
+.vision .container{
+  padding: 0;
+}
+.vision .row{
+  display: flex;
+  align-items: center;
+}
+.vision .text-col h3{
+  color: rgba(232, 0, 0, 1);
+  font-size: 18px;
+  display: block;
+  font-weight: 500;
+}
+.vision .text-col h2{
+  color: rgba(41, 5, 5, 1);
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.vision .text-col h4{
+  color: #3A3A3A;
+  font-family: "Rubik", Sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 38px;
+  margin: 30px 0 15px 0;
+}
+.vision .text-col ul {
+  margin: 20px 0;
+}
+.vision .text-col ul li{
+  margin-bottom: 10px;
+}
 
+.vision .text-col ul li p{
+  color: rgba(58, 58, 58, 1);
+  font-family: "Karla", Sans-serif;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.7;
+}
+.vision .text-col ul li p span{
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: rgba(5, 120, 5, 1);
+  display: inline-block;
+  margin-right: 10px;
+}
+.vision .text-col ul li p span.yellow{
+  background-color: rgba(251, 173, 65, 1);
+}
 
+.vision .image-col{
+  text-align: right;
+}
+.vision .image-col img{
+  max-width: 100%;
+  position: relative;
+}
+.vision .image-col .number{
+  background-image: url(imgs/Path-10192.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  bottom: 0px;
+  left: -15px;
+  padding: 10px 30px 15px 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.vision .image-col .number h3 {
+  color: #FFFFFF;
+  margin-bottom: 0px;
+  font-family: "Rubik", Sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+.vision .image-col .number .phone{
+  min-height: 60px;
+  min-width: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(251, 173, 65, 1);
+  color: #fff;
+  font-size: 30px;
+  margin-right: 15px;
+}
 
+@media(max-width:992px){
+  .vision .text-col h2{
+    font-size: 32px;
+  }
+}
 
+@media(max-width:768px){
+  .vision {
+    padding: 70px 0;
+  }
+  .vision .container{
+    padding: 0 15px;
+  }
+  .vision .text-col{
+    margin-bottom: 40px;
+  }
+  .vision .text-col h4{
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .vision .image-col{
+    text-align: left;
+  }
+  .vision .image-col .number{
+    left: 5px;
 
-
+  }
+}
 
 
 
@@ -1734,25 +1853,6 @@ footer .tail-bar p{
     width: 100%;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
                                                   /* end process */
 
