@@ -2029,7 +2029,67 @@ footer .tail-bar p{
 
 
 
-      /* ***************************************start menu-01 page**************************************** */
+      /* ***************************************start menu page**************************************** */
+.categorie{
+  padding: 90px 0 60px;
+}
+.categorie .container{
+  padding: 0;
+}
+.categorie .contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+.categorie .box{
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.categorie .box img{
+  width: 100%;
+}
+.categorie .box a{
+  text-decoration: none;
+  color: #fff;
+  background-color: #E80000;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 5px 20px;
+  border-radius: 12px 12px 0 0;
+}
+.categorie .box a:hover{
+  box-shadow: #00000029 -20px -15px 50px;
+}
+.categorie .box a i{
+  color: #fff;
+  font-size:17px;
+  margin-right: 4px;
+}
+@media (max-width: 992px) { 
+  .categorie .partner-heading h2{
+    font-size: 32px;
+  }
+ }
+@media (max-width: 768px) { 
+  .categorie{
+    padding: 60px 0 30px;
+  }
+ }
+      /* ***************************************end menu page**************************************** */
+
+
+
+      /* ***************************************end menu-item page**************************************** */
 
 
 
@@ -2046,4 +2106,7 @@ footer .tail-bar p{
 
 
 
-      /* ***************************************end menu-01 page**************************************** */
+
+
+      
+      /* ***************************************end menu-item page**************************************** */
