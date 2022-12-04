@@ -1103,13 +1103,16 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
 .offer {
   padding: 110px 0;
 }
+.menu-item-offer{
+  padding: 120px 0 70px;
+}
 .offer .container{
   padding: 0;
 }
 .offer .content1{
   background-image: url(imgs/05.png);
 }
-.menu-item .menu-item-content-1{
+.menu-item-offer .menu-item-content-1{
   background-image: url(imgs/87.png);
 }
 .offer .content2{
@@ -2091,6 +2094,7 @@ footer .tail-bar p{
     padding: 60px 0 30px;
   }
  }
+ 
       /* ***************************************end menu page**************************************** */
 
 
@@ -2113,25 +2117,175 @@ footer .tail-bar p{
 
 
 
+
+                                                  /* start meal */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                  /* end meal */
+
                                                   /* start download-app */
+.download-app{
+  padding: 100px 0;
+}
+.download-app .container{
+  padding: 0;
+}
+.download-app .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
 
+}
+.download-app .text-col h3{
+  color: rgba(232, 0, 0, 1);
+  font-size: 18px;
+  display: block;
+  font-weight: 500;
+}
+.download-app .text-col h2{
+  color: rgba(41, 5, 5, 1);
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin: 15px 0;
+}
+.download-app .text-col p{
+  color: rgba(58, 58, 58, 1);
+  font-family: 'Karla', sans-serif;
+  line-height: 1.7;
+  margin-bottom: 50px;
+}
 
+.download-app .text-col .btn{
+  border-radius: 30px;
+  height: 55px;
+  width: 185px;
+  border: 2px solid rgba(232, 0, 0, 1);
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  display: inline-block;
+}
+.download-app .text-col .btn:first-of-type{
+  background-color: rgba(232, 0, 0, 1);
+  box-shadow: 0 40px 60px rgba(207, 20, 34, 0.3);
+  margin-right: 15px;
 
+}
+.download-app .text-col .btn:last-of-type{
+  background-color: transparent;
+}
 
+.download-app .text-col .btn:first-of-type:hover{
+  background-color: transparent;
+  box-shadow: none;
+}
+.download-app .text-col .btn:first-of-type:hover a{
+  color: rgba(232, 0, 0, 1);
+}
+.download-app .text-col .btn:last-of-type:hover{
+  background-color: rgba(232, 0, 0, 1); 
+  box-shadow: 0 40px 60px rgba(207, 20, 34, 0.25);
+}
+.download-app .text-col .btn:last-of-type:hover a{
+  color: #fff;
+}
 
+.download-app .text-col .btn a{
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Karla", Sans-serif;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;  
+}
+.download-app .text-col .btn a i{
+  font-size: 25px;
+  margin-right: 5px;
+}
+.download-app .text-col .btn:first-of-type a{
+  color: #fff;
+}
+.download-app .text-col .btn:last-of-type a{
+  color: rgba(232, 0, 0, 1);
+}
 
+.download-app .image-col{
+  text-align: right;
 
+}
+.download-app .image-col img:first-of-type{
+  max-width: 100%;
+  height: auto;
+  position: relative;
+}
+.download-app .image-col .iphone{
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: translate(45%,10%);
+}
 
+@media (max-width: 1200px) { 
+  .download-app .image-col .iphone{
+    transform: translate(20%,10%);
+  }
+}
 
+@media (max-width: 992px) { 
+  .download-app .image-col .iphone{
+    transform: translate(3%,20%);
+  }
+  .download-app .text-col h2{
+    font-size: 30px;
+  }
+}
 
+@media (max-width: 768px) { 
+  .menu-item-offer{
+    padding-top: 90px;
+  }
 
+  .download-app{
+    padding-top: 50px;
+  }
+  .download-app .container{
+    padding: 0 15px;
+  }
+  .download-app .image-col{
+    margin-top: 100px;
+    text-align: center;
+  }
+  .download-app .image-col .iphone{
+    transform: translate(26%,10%);
+  }
+}
 
-
-
-
-
-
-
+@media (max-width: 576px) { 
+  .download-app{
+    padding-bottom: 60px;
+  }
+  .download-app .image-col{
+    display: none;
+  }
+ }
                                                   
                                                   /* end download-app  */
 
