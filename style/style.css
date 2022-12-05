@@ -2836,7 +2836,17 @@ footer .tail-bar p{
     margin-right: 0;
   }
  }
+
 @media (max-width: 576px) { 
+  .contact-form .box{
+    padding-top: 60px;
+  } 
+  .contact-form .box .heading h3{
+    font-size: 32px;
+  }
+  .contact-form .box .heading p{
+    margin-bottom: 25px;
+  }
   .contact-form{
     padding: 70px 0;
   }
@@ -2846,3 +2856,27 @@ footer .tail-bar p{
 
 
       /* ***************************************end contact page**************************************** */
+
+
+
+      /* ***************************************start faq page**************************************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      /* ***************************************end faq page**************************************** */
