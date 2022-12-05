@@ -124,7 +124,7 @@ $(function(){
         }
 
         //arrow
-        $(this).find('i').toggleClass('bx-rotate-180').toggleClass('red');
+        $(this).find('i').toggleClass('bx-rotate-180 red');
 
         if($(this).find('i').hasClass('red')){
             $(this).find('i').css('color','rgba(232, 0, 0, 1)');
@@ -135,7 +135,7 @@ $(function(){
     });
 
 
-
+    //
 
 
 

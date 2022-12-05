@@ -1651,12 +1651,14 @@ footer .tail-bar p{
   line-height: 1.2;
   margin-bottom: 0;
   color: #fff;
+  font-family: "Rubik", Sans-serif;
 }
 
 .about-lable a{
   text-decoration: none;
-  color: #fff;
-  transition: all 0.3s ease-in-out;;
+  color: #ffffff;
+  transition: all 0.3s ease-in-out;
+  font-family: "Karla", Sans-serif;
 }
 .about-lable a:hover{
   color: rgba(232, 0, 0, 1);
@@ -1673,6 +1675,7 @@ footer .tail-bar p{
   font-size: 15px;
   font-weight: 400;
   color: #fff;
+  font-family: "Karla", Sans-serif;
 }
 
 @media (max-width: 992px) {
@@ -2942,5 +2945,26 @@ footer .tail-bar p{
  }
   
 
- 
+
       /* ***************************************end faq page**************************************** */
+
+
+
+      /* ***************************************start Checkout page**************************************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /* ***************************************end Checkout page**************************************** */
