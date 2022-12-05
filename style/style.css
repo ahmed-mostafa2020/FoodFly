@@ -203,9 +203,9 @@ header .topbar .topbar-right ul li:first-child::after{
   left: 0;
   transition: all 0.5s ease;
 }
-.navbar nav .main-nav .burger-icon span:nth-child(2) {
+/* .navbar nav .main-nav .burger-icon span:nth-child(2) {
   width: 75%;
-}
+} */
 .navbar nav .main-nav .burger-iconspan:first-child {
   top: 0;
 }
@@ -216,9 +216,9 @@ header .topbar .topbar-right ul li:first-child::after{
 .navbar nav .main-nav .burger-icon span:last-child {
   top: 12px;
 }
-.navbar nav .main-nav .burger-icon:hover span:nth-child(2) {
+/* .navbar nav .main-nav .burger-icon:hover span:nth-child(2) {
   width: 100%;
-}
+} */
 
 /*.navbar nav .main-nav .burger-icon:hover span:nth-child(2) {
   opacity: 0;
@@ -293,6 +293,7 @@ header .topbar .topbar-right ul li:first-child::after{
   transition-duration: 0.5s;
   z-index: 999;             
 }
+
 .navbar .side-nav .side-nav-header {
   display: flex;
   align-items: center;
@@ -321,7 +322,7 @@ header .topbar .topbar-right ul li:first-child::after{
 .navbar .side-nav .side-nav-menu ul a{
   text-decoration: none;
   color: rgb(48, 48, 48);
-  transition: all 0.3s linear;
+  transition: all 0.2s ease-in-out;
 }
 .navbar .side-nav .side-nav-menu ul a:hover{
   color: rgba(232, 0, 0, 1);
@@ -334,6 +335,8 @@ header .topbar .topbar-right ul li:first-child::after{
   font-weight: 500;
   font-family: 'Karla', sans-serif;
   line-height: 1.2;
+  transition: all 0.2s ease-in-out;
+
 }
 
 @media (max-width: 992px) { 
@@ -437,7 +440,7 @@ main .mentor-main .btn:first-of-type a{
 main .mentor-main .btn:last-of-type a{
   color: rgba(232, 0, 0, 1);
 }
-@media (max-width: 576px) { 
+@media (max-width: 992px) { 
 
   main .container{
     padding: 0;
@@ -2633,3 +2636,100 @@ footer .tail-bar p{
   }
  }
       /* ***************************************end error page**************************************** */
+
+
+
+      /* ***************************************start contact page**************************************** */
+
+
+                                              /* start contact-media */
+.contact-media{
+  padding: 90px 0 70px;
+}
+.contact-media .contain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-media .box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 30px 0 20px;
+  border-radius:20px;
+  border: 1px solid rgba(4, 154, 68, 0.15);
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+.contact-media .box:hover{
+  box-shadow: 20px 20px 50px rgba(126, 48, 16, 0.05);
+}
+
+.contact-media .box .backcolor{
+  background-image: url(imgs/Group-1164.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 20px;
+}
+.contact-media .box .backcolor i{
+  color: #fff;
+  font-size: 50px;
+}
+
+.contact-media .box h3{
+  color: rgba(41, 5, 5, 1);
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  margin: 30px 0 10px;
+}
+.contact-media .box p{
+  color: rgba(58, 58, 58, 1);
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+}
+@media (max-width: 768px) { 
+  .contact-media{
+    padding: 70px 0 50px;
+  }
+ }
+                                              /* end contact-media */
+
+                                              /* start contact-form */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                              
+                                              /* end contact-form */
+
+
+
+      /* ***************************************end contact page**************************************** */

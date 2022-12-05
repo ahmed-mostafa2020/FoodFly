@@ -51,19 +51,29 @@ $(function(){
 
 
     // open & close side-nav from burger icon
-    $('.navbar nav .main-nav ').on('click','.burger-icon',function(){
+
+    $('.navbar nav .main-nav .burger-icon').on('click',function(){
 
         let  sidebar = $('.navbar .side-nav');
-        if(sidebar.hasClass('block')){
 
-            sidebar.css('left','-400px');
-            sidebar.removeClass('block');
-        }
-        else{
-            sidebar.css('left','0');
-            sidebar.addClass('block');
+        sidebar.toggleClass('isvisible');
+        if(sidebar.hasClass('isvisible')){
+
+            sidebar.animate({
+
+                left: 0
+
+            },300);
+
+        } else{
+
+            sidebar.animate({
+
+                left: '-400px'
+            },300);
         }
     });
+    
 
     //close side-nav
     $('.navbar .side-nav .side-nav-header').on('click','.close-menu',function(){
