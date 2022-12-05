@@ -51,38 +51,40 @@ $(function(){
 
 
     // open & close side-nav from burger icon
+    
+    let  sidebar = $('.navbar .side-nav');
 
     $('.navbar nav .main-nav .burger-icon').on('click',function(){
 
-        let  sidebar = $('.navbar .side-nav');
 
         sidebar.toggleClass('isvisible');
         if(sidebar.hasClass('isvisible')){
 
             sidebar.animate({
-
                 left: 0
-
-            },300);
+            },500);
 
         } else{
 
             sidebar.animate({
-
                 left: '-400px'
-            },300);
+            },500);
         }
     });
-    
+
 
     //close side-nav
     $('.navbar .side-nav .side-nav-header').on('click','.close-menu',function(){
-        $('.navbar .side-nav').css('left','-400px');
+        sidebar.animate({
+            left: '-400px'
+        },500);
     });
 
     document.onclick = function(e){
         if(e.target.className !== 'side-nav' && e.target.className !== 'burger-icon'){ 
-            $('.navbar .side-nav').css('left','-400px');
+            sidebar.animate({
+                left: '-400px'
+            },500);
         }
     }
 
