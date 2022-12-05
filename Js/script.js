@@ -51,7 +51,7 @@ $(function(){
 
 
     // open & close side-nav from burger icon
-    
+
     let  sidebar = $('.navbar .side-nav');
 
     $('.navbar nav .main-nav .burger-icon').on('click',function(){
@@ -108,7 +108,31 @@ $(function(){
 
     });
 
-    //
+
+    // faq question border & arrow icon
+
+
+    $('.question .box button').on('click', function(){
+        //border
+        $(this).toggleClass('red');
+
+        if($(this).hasClass('red')){
+            $(this).css('border-color','rgba(232, 0, 0, 1)');
+        }
+        else{
+            $(this).css('border-color','rgba(58, 58, 58, 0.4)');
+        }
+
+        //arrow
+        $(this).find('i').toggleClass('bx-rotate-180').toggleClass('red');
+
+        if($(this).find('i').hasClass('red')){
+            $(this).find('i').css('color','rgba(232, 0, 0, 1)');
+        }
+        else{
+            $(this).find('i').css('color','rgba(58, 58, 58, 0.4)');
+        }
+    });
 
 
 
