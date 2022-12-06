@@ -96,7 +96,7 @@ header .topbar .topbar-right ul li:first-child::after{
   padding: 0;
   height: 99px;
 }
-.navbar-error{
+.navbar-white{
   background-color: #fff;
 }
 
@@ -1435,10 +1435,8 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
 @media (max-width: 576px) { 
   .inst .heading h2{
     font-size: 32px;
-
   }
-}
-                                                
+}                                              
                                                   /* end instgram */
 
                                                   /* start footer */
@@ -3192,6 +3190,7 @@ footer .tail-bar p{
 
 
 
+                                              /* start price-table */
 
 
 
@@ -3202,5 +3201,114 @@ footer .tail-bar p{
 
 
 
-      
+
+
+
+
+
+
+
+
+
+                                              /* end price-table */
+
+                                              /* start total-price */
+.total-price{
+  padding: 100px 0;
+  text-align: left;
+  background-color: rgba(243, 243, 243, 1);
+}
+.total-price .box{
+  padding: 0 0 0 30px;
+}
+.total-price .box h2{
+  color: rgba(58, 58, 58, 1);
+  font-size: 32px;
+  font-weight: 600;
+  font-family: 'Rubik', sans-serif;
+  padding-bottom: 30px;
+  margin-bottom: 0;
+}
+
+.total-price .box .price{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(69, 69, 69, 0.2);
+}
+.total-price .box .price p{
+  font-size: 17px;
+  color:rgba(58, 58, 58, 1);
+  font-family: 'Rubik', sans-serif;
+  font-weight: 600;
+  margin: 0 100px 0 0;
+}
+.total-price .box .price p.total{
+  color: rgba(41, 5, 5, 1);
+  margin: 0 135px 0 0;
+}
+.total-price .box .price p span{
+  color: rgba(41, 5, 5, 1);
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Rubik', sans-serif;
+}
+
+.total-price .box .btn{
+  border-radius: 30px;
+  height: 55px;
+  width: 230px;
+  padding: 0 90px;
+  border: 2px solid rgba(232, 0, 0, 1);
+  background-color: rgba(232, 0, 0, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 40px 60px rgba(207, 20, 34, 0.15);
+  margin-top: 35px;
+  transition: all 0.3s ease-in-out;
+}
+.total-price .box .btn a{
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "Karla", Sans-serif;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;  
+  color: #fff;
+}
+.total-price .box .btn:hover{
+  background-color: transparent;
+  box-shadow: none;
+}
+.total-price .box .btn:hover a{
+  color: rgba(232, 0, 0, 1);
+}
+
+@media (max-width: 576px) {
+
+
+
+
+
+  
+  .total-price{
+    padding: 70px 0;
+  }
+  .total-price .box h2{
+    font-size: 30px;
+  }
+  .total-price .box .price p{
+    margin-right: 80px;
+  }
+  .total-price .box .price p.total{
+    margin-right: 115px;
+  }
+ }
+                                              /* end total-price */
+
+
+
       /* ***************************************end cart page**************************************** */
