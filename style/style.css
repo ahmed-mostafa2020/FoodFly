@@ -2953,18 +2953,254 @@ footer .tail-bar p{
       /* ***************************************start Checkout page**************************************** */
 
 
+.tables{
+  padding: 100px 0;
+  text-align: center;
+}
+.tables .box{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 0 50px;
+}
 
+.tables .box .customer-details,.tables .box .payment-methods{
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  flex-wrap: wrap;
+  text-align: center;
+  width: 48%;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 560px;
+}
+.tables .box .customer-details{
+  margin-right: 25px;
+}
 
+.tables .box .customer-details .customer-header,.tables .box .payment-methods .payment-header{
+  text-align: center;
+  width: 100%;
+  background-color: rgba(232, 0, 0, 1);
+  padding: 20px 0;
+}
+.tables .box .customer-details .customer-header h4,.tables .box .payment-methods .payment-header h4{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+  letter-spacing: 1.1px;
+}
 
+.tables .box .customer-details .customer-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  padding: 35px 30px;
+  background-color: rgba(240, 240, 240, .8);
+  width: 100%;
+}
 
+.tables .box .customer-details .customer-form input{
+  width: 100%;
+  border-radius: 30px;
+  background-color: rgba(249, 249, 249, 1);
+  border: none;
+  outline: 1px solid rgba(69, 69, 69, 0.2);
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(58, 58, 58, 1);
+  padding: 15px 25px;
+  margin-bottom: 25px;
+  font-family: "Karla", sans-serif;
+  transition: all 0.3s linear;
+}
+.tables .box .customer-details .customer-form input:last-of-type{
+  margin-bottom: 0px;
+}
+.tables .box .customer-details .customer-form input:focus{
+  outline: 1px solid rgba(232, 0, 0, 1);
+}
 
+.tables .box .payment-methods .payment-list{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: left;
+  padding: 35px 30px;
+  background-color: rgba(240, 240, 240, .8);
+  width: 100%;
+}
+.tables .box .payment-methods .payment-list ul.content {
+  border-bottom: 1px solid rgba(69, 69, 69, 0.2);
+}
+.tables .box .payment-methods .payment-list ul.content li{
+  margin-bottom: 15px;
+}
+.tables .box .payment-methods .payment-list ul.content li h3{
+  font-size: 15px;
+  font-weight: 800;
+  color: rgba(41, 5, 5, 1);
+  font-family: 'Rubik', sans-serif;
+}
+.tables .box .payment-methods .payment-list ul.content li p{
+  color: rgba(58, 58, 58, 1);
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Karla", sans-serif;
+}
 
+.tables .box .payment-methods .payment-list ul.content li .confirm{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding-bottom: 18px;
+}
+.tables .box .payment-methods .payment-list ul.content li .confirm input[type="checkbox"]{
+  appearance: none;
+}
+.tables .box .payment-methods .payment-list ul.content li .confirm label{
+  color: rgba(58, 58, 58, 1);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Karla", sans-serif;
+  margin-bottom: 0;
+  width: 100%;
+  position: relative;
+}
+.tables .box .payment-methods .payment-list ul.content li .confirm label::before{
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgba(5, 120, 5, 0.6);
+  border-radius: 2px;
+  margin-right: 7px;
+  top: 1px;
+}
+.tables .box .payment-methods .payment-list ul.content li .confirm input[type="checkbox"]:checked + label::after{
+  font-family: boxicons!important;
+  content: "\ea41";
+  color: rgba(5, 120, 5, 1);
+  font-size: 22px;
+  position: absolute;
+  top: -8px;
+  left: -1px;
+}
 
+.tables .box .payment-methods .payment-list .credit-cards{
+  padding-top: 18px;
+  width: 100%;
+}
+.tables .box .payment-methods .payment-list .credit-cards ul{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.tables .box .payment-methods .payment-list .credit-cards ul li{
+  display: inline-block;
+}
+.tables .box .payment-methods .payment-list .credit-cards ul li img{
+  width: 60px;
+  max-height: 50px;
+}
 
+.tables .send{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.tables .send input[type="submit"]{
+  width: 170px;
+  background-color:rgba(5, 120, 5, 1);
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  font-weight: 400px;
+  outline: 0;
+  border: 2px solid rgba(5, 120, 5, 1);
+  box-shadow: 0 20px 60px rgba(5, 120, 5, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+.tables .send input[type="submit"]:hover{
+  background-color: transparent;
+  color: rgba(5, 120, 5, 1);
+  box-shadow: none;
+}
 
+@media (max-width: 992px){
+  .tables .container{
+    padding: 0;
+  }
+  .tables .box{
+    padding: 0;
+  }
+}
 
-
+@media (max-width: 768px) {
+  .tables {
+    padding: 70px 0 ;
+  } 
+  .tables .container{
+    padding: 0 15px ;
+  } 
+  .tables .box{
+    padding: 0 20px;
+  }
+  .tables .box .customer-details{
+    margin-bottom: 30px;
+  }
+  .tables .box .customer-details,.tables .box .payment-methods{
+    width: 100%;
+    margin-right: 0;
+    min-height: auto;
+  }
+  .tables .box .customer-details .customer-header h4,.tables .box .payment-methods .payment-header h4{
+    letter-spacing: 0;
+  }
+  .tables .box .customer-details .customer-form,.tables .box .payment-methods .payment-list{
+    padding: 25px 20px;
+  }
+}
 
 
 
       /* ***************************************end Checkout page**************************************** */
+
+
+
+      /* ***************************************start cart page**************************************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      /* ***************************************end cart page**************************************** */
