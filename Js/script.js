@@ -113,6 +113,7 @@ $(function(){
 
 
     $('.question .box button').on('click', function(){
+        // $(this).siblings().removeClass('red').find('i').removeClass('bx-rotate-180 red');
         //border
         $(this).toggleClass('red');
 
@@ -135,7 +136,26 @@ $(function(){
     });
 
 
-    //
+    //increase and decrease no of items in cart
+    //plus
+    $('.price-table .box .table .body .col .quantity .plus-btn').on('click', function(){
+        let counter = $(this).siblings('.counter') ;
+
+        counter.val( parseInt(counter.val()) + 1 );
+    });
+
+    //minus
+    $('.price-table .box .table .body .col .quantity .minus-btn').on('click', function(){
+        let counter = $(this).siblings('.counter') ;
+        
+        if(counter.val() > 0){
+            counter.val( parseInt(counter.val()) - 1 );
+        }
+        else{
+             counter.val( 0 );
+        }
+
+    });
 
 
 

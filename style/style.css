@@ -3191,24 +3191,259 @@ footer .tail-bar p{
 
 
                                               /* start price-table */
+.price-table{
+  padding: 100px 0;
+}
+.price-table .box{
+  padding: 0 0 0 30px;
+  text-align: center;
+}
+.price-table .box .table{
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 1px 10px rgb(0 0 0 / 10%);
+}
+.price-table .box .table .head{
+  width: 100%;
+  background-color: green;
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+}
+.price-table .box .table .body{
+  width: 100%;
+  background-color: rgba(246, 246, 246, 1);
+}
+.price-table .box .table .head .line,.price-table .box .table .body .line{
+  width:100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: left;
+}
+.price-table .box .table .head .line{
+  padding: 20px 66px 20px 70px;
+}
+.price-table .box .table .body .line{
+  padding: 20px 50px 20px 50px;
+  border-bottom: 1px solid rgba(58, 58, 58, 0.2);
+}
+.price-table .box .table .body .noborder{
+  border: 0;
+}
+
+.price-table .box .table .head .col,.price-table .box .table .body .col{
+  display: inline-block;
+  flex-grow: 0;
+}
+.price-table .box .table .head .product{
+  min-width: 40.9%;
+}
+.price-table .box .table .body .col1{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.price-table .box .table .body .col1 .content{
+  min-width: 260px;
+}
+.price-table .box .table .body .col1 .content a{
+  display: inline-block;
+  text-decoration: none;
+  color: rgba(41, 5, 5, 1);
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Rubik', sans-serif;
+  margin-bottom: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.price-table .box .table .body .col1 .content a:hover{
+  color: rgba(232, 0, 0, 1);
+}
+.price-table .box .table .body .col1 .content p{
+  color: rgba(58, 58, 58, 1);
+  font-size: 14px;
+  font-family: "Karla", Sans-serif;
+  margin: 0;
+}
+
+.price-table .box .table .body .col .quantity{
+  width: 115px;
+  display: inline-block;
+  position: relative;
+  background-color: rgba(239, 239, 239, 1);
+  border-radius: 30px;
+  overflow: hidden;
+}
+.price-table .box .table .body .col .quantity .minus-btn,.price-table .box .table .body .col .quantity .plus-btn{
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  cursor: pointer;
+  height: auto;
+  line-height: 1;
+}
+.price-table .box .table .body .col .quantity .minus-btn{
+  left: 10px;
+}
+.price-table .box .table .body .col .quantity .minus-btn::before{
+  content: "\eb8b";
+  font-family: boxicons!important;
+  font-size: 20px;
+}
+.price-table .box .table .body .col .quantity .plus-btn{
+  right: 15px;
+}
+.price-table .box .table .body .col .quantity .plus-btn::before{
+  content: "\ebc0";
+  font-family: boxicons!important;
+  font-size: 20px;
+}
+.price-table .box .table .body .col .quantity input{
+  width: 100%;
+  text-align: center;
+  height: 46px;
+  padding: 0 15px 0 25px;
+  border: 2px solid #F5F5F5;
+  font-weight: 400;
+  outline: 0;
+  transition: all 0.3s linear;
+  border-radius: 6px;
+  background-color: rgba(239, 239, 239, 1);
+  font-size: 15px;
+}
+
+.price-table .box .table .body .Remove a{
+  text-decoration: none;
+  color: rgba(232, 0, 0, 1);
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  position: relative;
+}
+.price-table .box .table .body .Remove a::before{
+  content: "\ef06";
+  font-family: boxicons!important;
+  color: rgba(232, 0, 0, 1);
+  position: relative;
+  top: 1px;
+  left: -2px;
+}
+
+.price-table .box .submitions{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 40px;
 
 
+}
+.price-table .box .submitions .cupon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.price-table .box .submitions .cupon .Apply{
+  margin-left: 20px;
+}
+.price-table .box .submitions input{
+  width: 170px;
+  height: 55px;
+  color: #fff;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 400px;
+  outline: 0;
+  transition: all 0.3s ease-in-out;
+}
+.price-table .box .submitions input.Code{
+  background-color: transparent;
+  color: rgba(58, 58, 58, 0.8);
+  border: 1px solid rgba(58, 58, 58, 0.6);
+}
+.price-table .box .submitions input.Apply{
+  background-color: rgba(5, 120, 5, 1);
+  color: #fff;
+  border: 1px solid rgba(5, 120, 5, 1);
+  cursor: pointer;
+}
+.price-table .box .submitions input.Update{
+  background-color: transparent;
+  color: rgba(58, 58, 58, 0.8);
+  border: 1px solid rgba(58, 58, 58, 0.6);
+  cursor: pointer;
+}
 
+.price-table .box .submitions input.Code:focus{
+  border: 1px solid rgba(5, 120, 5, 1);
+}
+.price-table .box .submitions input.Update:hover,.price-table .box .submitions input.Apply:hover{
+  background-color: rgba(232, 0, 0, 1);
+  color: #fff;
+  border: 1px solid rgba(232, 0, 0, 1);
+}
 
+@media (max-width: 1200px) { 
+  .price-table .box .table .body .col1 .content {
+    min-width: 184px;
+  }
+}
 
+@media (max-width: 992px) { 
+  .price-table .box .table .head .product{
+    min-width: auto;
+  }
+ }
+@media (max-width: 768px) { 
+  .price-table .box .submitions{
+    justify-content: center;
+  }
+ }
 
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 576px) { 
+  .price-table{
+    padding: 70px 0 50px 0;
+  }
+  .price-table .box {
+    padding: 0;
+  }
+  .price-table .box .table .body .line {
+     padding: 5px;
+  }
+  .price-table .box .table .head .line2{
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+  .price-table .box .table .body .col1 .content{
+    min-width: 150px;
+  }
+  .price-table .box .submitions{
+    justify-content: center;
+  }
+ }
+ @media (max-width: 407px){
+  .price-table .box .submitions .cupon .Apply{
+    margin-left: 0;
+  }
+ }
 
                                               /* end price-table */
 
@@ -3288,12 +3523,6 @@ footer .tail-bar p{
 }
 
 @media (max-width: 576px) {
-
-
-
-
-
-  
   .total-price{
     padding: 70px 0;
   }
