@@ -154,10 +154,29 @@ $(function(){
         else{
              counter.val( 0 );
         }
-
     });
 
 
+    //shop items shows
+
+    //to show quick box when hover origin of img
+    $('.shop-tabes .cards .card-body>a .origin').hover(function(){
+    
+        $(this).parent('a').siblings('.quick-box').css('opacity','1');
+    },function(){
+
+        $(this).parent('a').siblings('.quick-box').css('opacity','0');
+    });
+
+    //to show quick box when hover quick box
+    $('.shop-tabes .cards .card-body .quick-box').hover(function(){
+        $(this).css('opacity','1');
+    },function(){
+            $(this).css('opacity','0');
+    });
+
+    
+    //
 
 
 
