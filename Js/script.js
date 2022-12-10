@@ -138,14 +138,14 @@ $(function(){
 
     //increase and decrease no of items in cart
     //plus
-    $('.price-table .box .table .body .col .quantity .plus-btn').on('click', function(){
+    $(' .quantity .plus-btn').on('click', function(){
         let counter = $(this).siblings('.counter') ;
 
         counter.val( parseInt(counter.val()) + 1 );
     });
 
     //minus
-    $('.price-table .box .table .body .col .quantity .minus-btn').on('click', function(){
+    $('.quantity .minus-btn').on('click', function(){
         let counter = $(this).siblings('.counter') ;
         
         if(counter.val() > 0){
@@ -160,7 +160,7 @@ $(function(){
     //shop items shows
 
     //to show quick box when hover origin of img
-    $('.shop-tabes .cards .card-body>a .origin').hover(function(){
+    $('.card-body>a .origin').hover(function(){
     
         $(this).parent('a').siblings('.quick-box').css('opacity','1');
     },function(){
@@ -169,14 +169,20 @@ $(function(){
     });
 
     //to show quick box when hover quick box
-    $('.shop-tabes .cards .card-body .quick-box').hover(function(){
+    $('.card-body .quick-box').hover(function(){
         $(this).css('opacity','1');
     },function(){
             $(this).css('opacity','0');
     });
 
     
-    //
+    //switch describtion shop details
+    $('.describtion .box ul.switch li').on('click',function(e){
+        e.preventDefault();
+
+        $(this).siblings().removeClass('active');
+        $(this).addClass('active');
+    });
 
 
 
