@@ -2876,6 +2876,9 @@ footer .tail-bar p{
 .question{
   padding: 100px 0;
   text-align: center;
+  min-height: 700px;
+  display: flex;
+  align-items: center;
 }
 .question h4{
   color: rgba(41, 5, 5, 1);
@@ -2898,6 +2901,7 @@ footer .tail-bar p{
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  text-align: left;
   width: 100%;
   cursor: pointer;
   outline: 0;
@@ -2910,14 +2914,20 @@ footer .tail-bar p{
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 15px;
-  transition: all 0.2s linear;
+  transition: all 0.3s linear;
+}
+.question .box button.red{
+  border: 1px solid red;
 }
 .question .box button i{
   color: rgba(58, 58, 58, 0.4);
   font-size: 40px;
   font-weight: 100; 
   margin-left: auto;
-  transition: all 0.2s linear;
+  transition: all 0.3s linear;
+}
+.question .box button i.red{
+  color: red;
 }
 .question .box button .content{
   padding: 30px 0px 0px;
@@ -2927,7 +2937,7 @@ footer .tail-bar p{
   font-weight: 300;
   font-family: 'Karla', sans-serif;
   line-height: 1.7;
-  transition: all 0.2s linear;
+  transition: all 0.3s linear;
 }
 
 @media (max-width: 992px) { 
@@ -2948,6 +2958,15 @@ footer .tail-bar p{
   }
   .question .box{
     padding: 0 ;
+  }
+ }
+ @media (max-width: 450px){ 
+  .question .box button{
+    font-size: 16px;
+    padding-right: 15px;
+  }
+  .question .box button i{
+    font-size: 35px;
   }
  }
   
@@ -4217,5 +4236,5 @@ footer .tail-bar p{
 
 
 
-      
+
       /* ***************************************end login page************************************** */

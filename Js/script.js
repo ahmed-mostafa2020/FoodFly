@@ -111,28 +111,20 @@ $(function(){
 
     // faq question border & arrow icon
 
+    //adjust sec padding
+    if (($('.question .container')).height() <= 460){
+        $('.question').css('padding','0px');
+    }
 
     $('.question .box button').on('click', function(){
-        // $(this).siblings().removeClass('red').find('i').removeClass('bx-rotate-180 red');
         //border
-        $(this).toggleClass('red');
-
-        if($(this).hasClass('red')){
-            $(this).css('border-color','rgba(232, 0, 0, 1)');
-        }
-        else{
-            $(this).css('border-color','rgba(58, 58, 58, 0.4)');
-        }
+        $(this).siblings().removeClass('red');
+        $(this).toggleClass('red').delay(700);
+        $($(this).data('target')).parent().siblings().find('div').removeClass('show').delay(500);
 
         //arrow
         $(this).find('i').toggleClass('bx-rotate-180 red');
-
-        if($(this).find('i').hasClass('red')){
-            $(this).find('i').css('color','rgba(232, 0, 0, 1)');
-        }
-        else{
-            $(this).find('i').css('color','rgba(58, 58, 58, 0.4)');
-        }
+        $(this).siblings().find('i').removeClass('red bx-rotate-180');
     });
 
 
@@ -239,7 +231,7 @@ $(function(){
 
 
 
-    
+
 
 
     //         to show instgram icon 
