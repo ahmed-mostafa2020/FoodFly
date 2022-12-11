@@ -175,19 +175,51 @@ $(function(){
             $(this).css('opacity','0');
     });
 
+
     
-    //switch describtion shop details
+
+
+
+
+        //switch describtion shop details
+    $('.describtion .box .content .desc-content').addClass('show');
+
     $('.describtion .box ul.switch li').on('click',function(e){
         e.preventDefault();
-
         $(this).siblings().removeClass('active');
+        $($(this).siblings().data('target')).removeClass('show') ;
+
         $(this).addClass('active');
     });
 
 
+    //rating stars in shop details
+    $('.rating ul.stars li').on('click','a',function(e){
+        e.preventDefault();
+        // $(this).addClass('checked');
+        $(this).css('color','rgba(251, 173, 65, 1)');
+        $(this).parent().prevAll().find('a').addClass('checked');
+        $(this).parent().prevAll().find('a').css('color','rgba(251, 173, 65, 1)');
+    });
 
 
+    //     $('.rating ul.stars li a').hover(function(){
+        
+    //     $(this).css('color','rgba(251, 173, 65, 1)');
+    //     $(this).parent().prevAll().find('a').css('color','rgba(251, 173, 65, 1)');
+    // },function(){
+    //     if($(this).hasClass('checked') && $(this).parent().prevAll().find('a').hasClass('checkedd') ){
+    //         $(this).css('color','rgba(251, 173, 65, 1)');
+    //         $(this).parent().prevAll().find('a').css('color','rgba(251, 173, 65, 1)');
+    //     }
+    //     else{
+    //         $(this).css('color','rgba(0, 0, 0, 0.8)');
+    //         $(this).parent().prevAll().find('a').css('color','rgba(0, 0, 0, 0.8)');
+    //     }
+    // });
 
+
+    //
 
     
 

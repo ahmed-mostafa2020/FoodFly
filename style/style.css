@@ -17,6 +17,9 @@ body {
 ul{
   margin: 0;
 }
+.bx{
+  vertical-align: text-top;
+}
 
   /* fonts: */
   /*
@@ -3082,6 +3085,7 @@ footer .tail-bar p{
   margin-bottom: 0;
   width: 100%;
   position: relative;
+  cursor: pointer;
 }
 .tables .box .payment-methods .payment-list ul.content li .confirm label::before{
   content: "";
@@ -3093,6 +3097,7 @@ footer .tail-bar p{
   border-radius: 2px;
   margin-right: 7px;
   top: 1px;
+  cursor: pointer;
 }
 .tables .box .payment-methods .payment-list ul.content li .confirm input[type="checkbox"]:checked + label::after{
   font-family: boxicons!important;
@@ -3994,7 +3999,7 @@ footer .tail-bar p{
 }
 .describtion .box ul.switch li{
   display: inline-block;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s linear;
 }
 .describtion .box ul.switch li a{
   text-decoration: none;
@@ -4003,7 +4008,7 @@ footer .tail-bar p{
   border-radius: 30px;
   font-size: 18px;
   font-family: "Karla", Sans-serif;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s linear;
 }
 .describtion .box ul.switch li.active a{
   background-color: rgba(251, 173, 65, 1);
@@ -4014,7 +4019,7 @@ footer .tail-bar p{
   text-align: left;
 }
 .describtion .box .content #desc-content{
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s linear;
 }
 .describtion .box .content #desc-content h2{
   font-size: 20px;
@@ -4029,6 +4034,9 @@ footer .tail-bar p{
   font-family: "Karla", Sans-serif;
 }
 
+.describtion .box .content #review-content{
+  transition: all 0.6s linear;
+}
 .describtion .box .content #review-content h2{
   font-size: 20px;
   font-weight: 500;
@@ -4048,12 +4056,13 @@ footer .tail-bar p{
   font-size: 18px;
   font-family: 'Karla', sans-serif;
 }
-.describtion .box .content #review-content input{
+.describtion .box .content #review-content input:not([type="checkbox"]){
   margin-bottom: 20px;
   width: 100%;
   height: 50px;
   padding: 0 15px;
   border: 2px solid #F5F5F5;
+  color: rgb(72, 72, 72);
   font-weight: 400;
   outline: 0;
   border-radius: 6px;
@@ -4061,6 +4070,38 @@ footer .tail-bar p{
   font-size: 15px;
   transition: all 0.3s linear;
 }
+.describtion .box .content #review-content input:not([type="checkbox"]):focus{
+  border: 2px solid rgb(232,0,0);
+}
+
+.describtion .box .content #review-content .rating{
+  width: 100%;
+  margin: 0 0 20px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.describtion .box .content #review-content .rating ul.stars{
+  margin-left: 10px;
+}
+.describtion .box .content #review-content .rating ul.stars li{
+  display: inline-block;
+}
+.describtion .box .content #review-content .rating ul.stars li:not(:first-of-type){
+  margin-left: -5px;
+}
+.describtion .box .content #review-content .rating ul.stars li a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease-in-out;
+}
+.describtion .box .content #review-content .rating ul.stars li a i{
+  font-size: 20px;
+}
+.describtion .box .content #review-content .rating ul.stars li a:hover{
+  color: rgba(251, 173, 65, 1);
+}
+
 .describtion .box .content #review-content textarea#comment{
   width: 100%;
   height: 120px;
@@ -4073,18 +4114,67 @@ footer .tail-bar p{
   border-radius: 6px;
   padding: 10px;
   font-size: 15px;
-  color: #52525c;
+  color: rgb(72, 72, 72);
   font-family: "Karla", sans-serif;
   transition: all 0.3s linear;
-
 }
 
+.describtion .box .content #review-content input[type="checkbox"]{
+  appearance: none;
+}
+.describtion .box .content #review-content label.savedata{
+  position: relative;
+  cursor: pointer;
+}
+.describtion .box .content #review-content label.savedata::before{
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border: 2px solid rgba(58, 58, 58, 0.2);
+  border-radius: 2px;
+  margin-right: 15px;
+  top: 2px;
+  cursor: pointer;
+}
+.describtion .box .content #review-content input[type="checkbox"]:checked + label::before{
+  background-color: rgba(232, 0, 0, 1);
+  border: 2px solid rgba(232, 0, 0, 1);
+}
+.describtion .box .content #review-content input[type="checkbox"]:checked + label::after{
+  font-family: boxicons!important;
+  content: "\ea41";
+  position: absolute;
+  color: #fff;
+  font-size: 17px;
+  top: -1px;
+  left: -1px;
+}
 
-
-
-
-
-
+.describtion .box .content #review-content input[type="submit"]{
+  width: 200px;
+  background-color:rgba(232, 0, 0, 1);
+  color: #fff;
+  padding: 11px 20px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  font-family: 'Karla', sans-serif;
+  font-size: 15px;
+  font-weight: 500px;
+  margin-top: 20px;
+  outline: 0;
+  border: 2px solid rgba(232, 0, 0, 1);
+  transition: all 0.3s ease-in-out;
+}
+.describtion .box .content #review-content input[type="submit"]:hover{
+  background-color: transparent;
+  color: rgba(232, 0, 0, 1);
+}
                                               /* end describtion */
 
                                               /* start related-post */

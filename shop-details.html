@@ -178,12 +178,12 @@
                 <div class="summary">
                     <h1>Beef Burger</h1>
                     <ul class="stars list-unstyled">
-                        <li><i class='checked bx bxs-star' ></i></li>
-                        <li><i class='checked bx bxs-star' ></i></li>
-                        <li><i class='checked bx bxs-star' ></i></li>
                         <li><i class='bx bxs-star' ></i></li>
                         <li><i class='bx bxs-star' ></i></li>
-                        <li><span>(05 Reviews)</span></li>
+                        <li><i class='bx bxs-star' ></i></li>
+                        <li><i class='bx bxs-star' ></i></li>
+                        <li><i class='bx bxs-star' ></i></li>
+                        <li><span>(0 Reviews)</span></li>
                     </ul>
                     <div class="price"><del>$7.99</del> <p class="disc">$6.99</p></div>
 
@@ -220,13 +220,11 @@
     <div class="container">
         <div class="box">
             <ul class="switch list-unstyled">
-                <li data-toggle="collapse" data-target="#desc-content" aria-expanded="false"
-                 aria-controls="collapseExample1">
+                <li class="active" data-toggle="collapse" data-target=".desc-content" aria-expanded="false">
                     <a href="#">Description</a>
                 </li>
-                <li data-toggle="collapse" data-target="#review-content" aria-expanded="false"
-                 aria-controls="collapseExample1">
-                    <a href="#">Reviews (02)</a>
+                <li data-toggle="collapse" data-target=".review-content" aria-expanded="false">
+                    <a href="#">Reviews (0)</a>
                 </li>
             </ul>
 
@@ -251,10 +249,26 @@
                         <label for="email">Email *</label>
                         <input type="email" id="email" required>
 
+                        <div class="rating">
+                            <label for="stars">Your rating *</label>
+                            <ul class="stars list-unstyled">
+                                <li><a href="#"><i class='bx bxs-star'></i></a></li>
+                                <li><a href="#"><i class='bx bxs-star'></i></a></li>
+                                <li><a href="#"><i class='bx bxs-star'></i></a></li>
+                                <li><a href="#"><i class='bx bxs-star'></i></a></li>
+                                <li><a href="#"><i class='bx bxs-star'></i></a></li>
+                            </ul>
+                        </div>
+                        
                         <label for="comment">Your review *</label>
                         <textarea name="comment" id="comment"></textarea>
-                   
-                    
+
+                        <input type="checkbox" id="savedata">
+                        <label for="savedata" class="savedata">Save my name, email, and website in this browser for
+                             the next time I comment.
+                        </label>
+
+                        <input type="submit" value="Submit">
 
                 </div>
       
