@@ -1022,9 +1022,6 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
 .about-testimonial .slider .about-card-body{
   border: 1px solid rgba(112, 112, 112, 0.2);
 } 
-.testimonial .slider .card-body:hover{
-  /* box-shadow: 10px 15px 10px #29050540; */
-}
 
 .testimonial .slider .card-body .icons{
   font-size: 60px;
@@ -3802,7 +3799,7 @@ footer .tail-bar p{
 }
 .product .box a{
   text-decoration: none;
-  transition: all 0.3s ease-in-out;;
+  transition: all 0.3s ease-in-out;
 }
 .product .box>a>img{
   max-width: 100%;
@@ -3810,6 +3807,7 @@ footer .tail-bar p{
   max-height: 575px;
   background-color: #dcdcdc;
   border-radius: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
 .product .box ul.small-items{
@@ -3822,33 +3820,39 @@ footer .tail-bar p{
 }
 .product .box ul.small-items li{
   display: inline-block;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  transition: all 0.3s linear;
 }
 .product .box ul.small-items li:not(:last-of-type){
-  margin-right: 10px;
+  margin-right: 15px;
 }
 .product .box ul.small-items li a{
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
 .product .box ul.small-items li>a>img{
-  max-width: 100%;
-  height: 100%;
+  width: 100%;
+  height: auto;
+  max-width: 160px;
+  max-height: 160px;
   border-radius: 10px;
-  transition: all 0.3s ease-in-out;
+  opacity: 0.9;
+  transition: all 0.2s linear;
 }
-.product .box ul li>a>img.active{
+.product .box ul.small-items li.active{
   border: 2px solid #E80000;
 }
-
+.product .box ul.small-items li.active a img{
+  opacity: 1;
+}
 .product .summary{
   width: 100%;
-  /* height: 100%; */
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
   padding: 30px 0 0 30px;
-  /* margin: auto 0; */
 }
 .product .summary h1{
   font-size: 40px;
@@ -4194,3 +4198,24 @@ footer .tail-bar p{
 
 
       /* ***************************************end product details page************************************** */
+
+
+
+      /* ***************************************start login page************************************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      /* ***************************************end login page************************************** */

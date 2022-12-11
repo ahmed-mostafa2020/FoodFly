@@ -176,7 +176,13 @@ $(function(){
     });
 
 
-    
+    //gallery silder shop details
+    $('.product .box ul.small-items li').on('click',function(e){
+        e.preventDefault();
+        $(this).addClass('active').siblings().removeClass('active');
+        console.log($(this).attr('src'))
+        $('.product .box a img.main-img').hide().attr('src', $(this).find('a img').attr('src')).fadeIn(300);
+    });
 
 
 
@@ -220,6 +226,18 @@ $(function(){
 
 
     //
+
+    
+
+
+
+
+
+
+
+
+
+
 
     
 
