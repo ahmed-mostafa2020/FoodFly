@@ -4010,13 +4010,74 @@ footer .tail-bar p{
   color: #fff;
 }
 
+.describtion .box .content{
+  text-align: left;
+}
+.describtion .box .content #desc-content{
+  transition: all 0.3s ease-in-out;
+}
+.describtion .box .content #desc-content h2{
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 25px;
+}
+.describtion .box .content #desc-content p{
+  width: 90%;
+  color: rgba(58, 58, 58, 0.9 );
+  font-size: 16px;
+  font-family: "Karla", Sans-serif;
+}
 
+.describtion .box .content #review-content h2{
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 25px;
+}
+.describtion .box .content #review-content p{
+  color: rgba(58, 58, 58, 1);
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+}
+.describtion .box .content #review-content span{
+  display: block;
+  margin-bottom: 5px;
+  color: #010F1C;
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'Karla', sans-serif;
+}
+.describtion .box .content #review-content input{
+  margin-bottom: 20px;
+  width: 100%;
+  height: 50px;
+  padding: 0 15px;
+  border: 2px solid #F5F5F5;
+  font-weight: 400;
+  outline: 0;
+  border-radius: 6px;
+  background-color: #F5F5F5;
+  font-size: 15px;
+  transition: all 0.3s linear;
+}
+.describtion .box .content #review-content textarea#comment{
+  width: 100%;
+  height: 120px;
+  background-color: #f4f5f7;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border: 2px solid #F5F5F5;
+  outline: none;
+  font-weight: 400;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 15px;
+  color: #52525c;
+  font-family: "Karla", sans-serif;
+  transition: all 0.3s linear;
 
-
-
-
-
-
+}
 
 
 

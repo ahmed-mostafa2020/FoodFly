@@ -220,10 +220,47 @@
     <div class="container">
         <div class="box">
             <ul class="switch list-unstyled">
-                <li><a href="#">Description</a></li>
-                <li><a  href="#">Reviews (02)</a></li>
+                <li data-toggle="collapse" data-target="#desc-content" aria-expanded="false"
+                 aria-controls="collapseExample1">
+                    <a href="#">Description</a>
+                </li>
+                <li data-toggle="collapse" data-target="#review-content" aria-expanded="false"
+                 aria-controls="collapseExample1">
+                    <a href="#">Reviews (02)</a>
+                </li>
             </ul>
+
+            <div class="content">
+
+                <div class="desc-content collapse" id="desc-content">
+                    <h2>Description</h2>
+                    <p>Gourmet burger with arugula, feta cheese, quail eggs and juicy cutlet made from selected beef.
+                    Served with sweet corn and cream barbecue sauce. Lacus vel facilisis volutpat est velit egestas.
+                    </p>
+                </div>
+
+                <div class="review-content collapse" id="review-content">
+                    <h2>Reviews</h2>
+                    <p>There are no reviews yet.</p>
+                    <span>Be the first to review “Beef Burger”</span>
+                    <p>Your email address will not be published. Required fields are marked *</p>
+                    
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" required>
+
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" required>
+
+                        <label for="comment">Your review *</label>
+                        <textarea name="comment" id="comment"></textarea>
+                   
+                    
+
+                </div>
+      
+            </div>
         </div>
+        
         
     </div>
 </div>
