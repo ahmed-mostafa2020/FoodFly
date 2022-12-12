@@ -4254,7 +4254,188 @@ footer .tail-bar p{
 
 
 
-      /* ***************************************start login page************************************** */
+      /* ***************************************start blog page************************************** */
+
+
+.blog {
+  padding: 90px 0;
+}
+.blog .box{
+  margin-bottom: 60px;
+}
+.blog .box a.food-img{
+  text-decoration: none;
+  width: 100%;
+}
+.blog .box a.food-img img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+.blog .box .info{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 15px 0;
+}
+.blog .box .info p{
+  margin: 0;
+}
+.blog .box .info p:not(:last-of-type) {
+  margin-right: 40px;
+}
+.blog .box .info p i{
+  color: rgba(232,0,0,1);
+  margin-right: 7px;
+  vertical-align: baseline;
+}
+.blog .box .info p a{
+  text-decoration: none;
+  color: rgba(58, 58, 58, 1);
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+.blog .box .info p a:hover{
+  color: rgba(232,0,0,1);
+}
+
+.blog .box a.food-desc{
+  text-decoration: none;
+  display: block;
+  color: rgba(41, 5, 5, 1);
+  font-family: 'Rubik', sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  margin: 20px 0;
+  width: 100%;
+  text-align: left;
+  line-height: 1.3;
+  transition: all 0.3s ease-in-out;
+}
+.blog .box a.food-desc:hover{
+  color: rgba(232,0,0,1);
+}
+
+.blog .box a.read{
+  text-decoration: none;
+  color: rgba(58, 58, 58, 1);
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+.blog .box a.read:hover{
+  color: rgba(232,0,0,1);
+}
+.blog .box a.read i{
+  font-size: 20px;
+  margin-left: 5px;
+  font-weight: 700;
+}
+
+.blog .brief{
+  width: 100%;
+}
+.blog .brief .cat-box ,.blog .brief .post-box{
+  padding: 30px;
+  background-color: rgba(240, 240, 240, 1);
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.blog .brief .cat-box h3{
+  color: rgba(41, 5, 5, 1);
+  font-size: 18px;
+  text-align: left;
+  font-weight: 500;
+  margin-bottom: 20px;
+  font-family: 'Rubik', sans-serif;
+}
+.blog .brief .cat-box ul {
+  width: 100%;
+}
+.blog .brief .cat-box ul li{
+  margin-bottom: 20px;
+  width: 100%;
+}
+.blog .brief .cat-box ul li p{
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.blog .brief .cat-box ul li p a{
+  text-decoration: none;
+  font-size: 18px;
+  color: rgba(58, 58, 58, 1);
+  font-family: 'Karla', sans-serif;
+  min-width: 80px;
+  transition: all 0.3s ease-in-out;
+}
+.blog .brief .cat-box ul li p a:hover{
+  color: rgb(232,0,0);
+}
+.blog .brief .cat-box ul li p span{
+  font-size: 18px;
+  color: rgba(58, 58, 58, 1);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+.blog .brief .post-box ul li{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.blog .brief .post-box ul li:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.blog .brief .post-box ul li a.img img{
+  max-width: 100%;
+  height: auto;
+  min-width: 65px;
+  min-height: 65px;
+  border-radius: 10px;
+}
+.blog .brief .post-box ul li p{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 0 0 12px;
+}
+
+.blog .brief .post-box ul li a{
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.blog .brief .post-box ul li p a.title{
+  color: rgba(58, 58, 58, 1);
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 5px;
+  font-family: 'Karla', sans-serif;
+}
+.blog .brief .post-box ul li p a.read{
+  color: rgba(69, 69, 69, 1);
+  font-size: 14px;
+  font-family: 'Karla', sans-serif;
+}
+.blog .brief .post-box ul li p a.read i{
+  vertical-align: middle;
+}
+.blog .brief .post-box ul li p a:hover{
+  color: rgb(232,0,0);
+}
 
 
 
@@ -4264,6 +4445,11 @@ footer .tail-bar p{
 
 
 
+@media (max-width: 576px) { 
+  .blog .box a.food-desc{
+    font-size: 32px;
+  }
+ }
 
 
 
@@ -4271,4 +4457,4 @@ footer .tail-bar p{
 
 
 
-      /* ***************************************end login page************************************** */
+      /* ***************************************end blog page************************************** */

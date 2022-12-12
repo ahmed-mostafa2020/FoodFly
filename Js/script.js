@@ -217,6 +217,11 @@ $(function(){
 
 
     //
+    $('.blog .brief .post-box ul li a.img').hover(function(){
+        $(this).siblings().find('a.title').css('color','rgb(232,0,0)');
+    },function(){
+        $(this).siblings().find('a.title').css('color','rgba(58, 58, 58, 1)');
+    });
 
     
 
