@@ -4356,9 +4356,8 @@ footer .tail-bar p{
   font-weight: 500;
   padding: 20px 25px;
 }
-.blog .brief .search-box::after{
-  font-family: boxicons!important;
-  content: "\ebf9";
+.blog .brief .search-box a{
+  text-decoration: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -4372,11 +4371,11 @@ footer .tail-bar p{
   justify-content: center;
   background-color: rgba(5, 120, 5, 1);
   color: #fff;
-  font-size: 25px;
-  cursor: pointer;
+  font-size: 20px;
 }
 
-.blog .brief .search-box,.blog .brief .cat-box ,.blog .brief .post-box,.blog .brief .tag-box,.blog .brief .download-box{
+.blog .brief .search-box,.blog .brief .cat-box ,.blog .brief .post-box,.blog .brief .tag-box,
+.blog .brief .download-box{
   padding: 30px;
   background-color: #F6F6F6;
   border-radius: 20px;
@@ -4596,7 +4595,16 @@ footer .tail-bar p{
     margin-right: 10px;
   }
  }
+ @media (max-width: 768px) { 
+  .blog .brief .tag-box .links{
+    justify-content: space-evenly;
+  }
+  }
+
 @media (max-width: 576px) { 
+  .blog .container{
+    padding: 0 15px;
+  }
   .blog .box a.food-desc{
     font-size: 32px;
   }
