@@ -100,8 +100,7 @@ $(function(){
             $('.tabes .cards .row').css('height','auto');
         }
         else {
-            $('.tabes .cards .row').css('min-height','480px');
-
+            $('.tabes ').css('min-height','480px');
             $('.tabes .cards div.card-body').not($($(this).data('content'))).parent().fadeOut(400).delay(300);
             $($(this).data('content')).parent().fadeIn(500);
           }

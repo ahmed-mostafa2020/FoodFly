@@ -728,12 +728,14 @@ main .mentor-main .btn:last-of-type a{
 }
 .tabes .cards .card-body .card-content ul.stars li i, .meal .box ul li ul.stars  li i{
   color: rgba(0, 0, 0, 0.16);
+  vertical-align: middle;
 }
 .tabes .cards .card-body .card-content ul.stars li i.checked,.meal .box ul li ul.stars li i.checked{
   color: #FBAD41;
 }
 .tabes .cards .card-body .card-content ul.stars li span{
   color: rgba(58, 58, 58, 1);
+  vertical-align: middle;
 }
 
 .tabes .cards .card-body .card-content ul.price li,.related-post .card-body .card-content ul.price li{
@@ -1332,6 +1334,7 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
   color: rgba(58, 58, 58, 1);
   font-size: 14px;
   font-family: 'Karla', sans-serif;
+  vertical-align: middle;
 }
 .art .card-body .card-content ul li span a{
   text-decoration: none;
@@ -1343,6 +1346,7 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
 }
 .art .card-body .card-content ul li i{
   color: rgba(232, 0, 0, 1);
+  vertical-align: middle;
 }
 
 .art .card-body .card-content h3{
@@ -1373,6 +1377,7 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
 }
 .art .card-body .card-content .read a i{
   font-size: 20px;
+  vertical-align: middle;
 }
 
 @media (max-width: 992px) { 
@@ -1545,6 +1550,9 @@ footer .footer-box .footer-lower .links h3{
   margin-bottom: 26px;
   color: #fff;
   font-weight: 500;
+}
+footer .footer-box .footer-lower .links>ul li i{
+  vertical-align: baseline;
 }
 footer .footer-box .footer-lower .links ul li{
   margin-bottom: 10px;
@@ -2100,6 +2108,7 @@ footer .tail-bar p{
   color: #fff;
   font-size:17px;
   margin-right: 4px;
+  vertical-align: baseline;
 }
 @media (max-width: 992px) { 
   .categorie .partner-heading h2{
@@ -2249,6 +2258,9 @@ footer .tail-bar p{
 .meal .box ul li ul.stars li{
   margin: 0;
 }
+.meal .box ul li ul.stars li i,.meal .box ul li ul.stars li span{
+  vertical-align: middle;
+}
 .meal .box ul li p{
   margin: 0;
 }
@@ -2372,6 +2384,16 @@ footer .tail-bar p{
   color: #fff;
 }
 
+.download-app .text-col .box{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.download-app .text-col .btn{
+  display: inline-block;
+  line-height: 33px;
+}
 .download-app .text-col .btn a{
   font-weight: 600;
   font-size: 16px;
@@ -2382,6 +2404,10 @@ footer .tail-bar p{
 .download-app .text-col .btn a i{
   font-size: 25px;
   margin-right: 5px;
+  vertical-align: middle;
+}
+.download-app .text-col .btn a span{
+  vertical-align: middle;
 }
 .download-app .text-col .btn:first-of-type a{
   color: #fff;
