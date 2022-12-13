@@ -4362,8 +4362,8 @@ footer .tail-bar p{
   top: 50%;
   transform: translateY(-50%);
   right: 45px;
-  min-width: 41px;
-  min-height: 41px;
+  min-width: 38px;
+  min-height: 38px;
   border-radius: 50%;
   text-align: center;
   display: flex;
@@ -4381,8 +4381,9 @@ footer .tail-bar p{
   border-radius: 20px;
   width: 100%;
   margin-bottom: 40px;
+}
+.blog .brief .search-box{
   position: relative;
-
 }
 
 .blog .brief .cat-box h3,.blog .brief .post-box h3,.blog .brief .tag-box h3{
@@ -4439,10 +4440,8 @@ footer .tail-bar p{
 }
 
 .blog .brief .post-box ul li a.img img{
-  max-width: 100%;
-  height: auto;
-  min-width: 65px;
-  min-height: 65px;
+  max-width: 65px;
+  max-height: 65px;
   border-radius: 10px;
 }
 .blog .brief .post-box ul li p{
@@ -4579,22 +4578,58 @@ footer .tail-bar p{
   font-family: 'Karla', sans-serif;
 }
 
+ul.pagination{
+  margin: 20px 0;
+}
+ul.pagination li:not(:last-of-type){
+  margin-right: 10px;
+}
+ul.pagination li a.page-link{
+  color: rgb(63, 63, 63) !important;
+  background-color: transparent !important;
+  border: 1px solid rgba(112, 112, 112, 0.6) !important;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Karla', sans-serif;
+  width: 35px;
+  height: 35px;
+  border-radius: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+ul.pagination li a.page-link:hover,ul.pagination li.active a{
+  background-color: rgb(232,0,0) !important;
+  color: #fff !important;
+  border-color: rgb(232,0,0) !important;
+}
+ul.pagination li.disabled a{
+  color: rgba(58, 58, 58, 0.5) !important;
+}
+
 @media (max-width: 1200px) { 
   .blog .brief .download-box .app-btn{
     justify-content: center;
   }
-  
  }
+
  @media (max-width: 1200px) and ( min-width: 992px ){ 
   .blog .brief .download-box .app-btn a:first-of-type{
     margin-bottom: 10px;
   }
 }
+
 @media (max-width: 992px) { 
+  .blog .brief .post-box ul li p a.title{
+    width: 100%;
+  }
   .blog .brief .download-box .app-btn a:first-of-type{
     margin-right: 10px;
   }
  }
+
  @media (max-width: 768px) { 
   .blog .brief .tag-box .links{
     justify-content: space-evenly;
@@ -4613,3 +4648,29 @@ footer .tail-bar p{
 
  
       /* ***************************************end blog page************************************** */
+
+
+
+      /* ***************************************start blog-details page************************************** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      /* ***************************************end blog-details page************************************** */
