@@ -3155,19 +3155,37 @@ footer .tail-bar p{
 .tables .box .payment-methods .payment-list .credit-cards{
   padding-top: 18px;
   width: 100%;
+  position: relative;
 }
+.tables .box .payment-methods .payment-list .credit-cards span{
+  display: inline-block;
+  color: rgba(58, 58, 58, 1);
+  background-color:  rgba(240, 240, 240, 1);
+  padding: 0px 40px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Karla", sans-serif;
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
 .tables .box .payment-methods .payment-list .credit-cards ul{
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 .tables .box .payment-methods .payment-list .credit-cards ul li{
   display: inline-block;
 }
 .tables .box .payment-methods .payment-list .credit-cards ul li img{
-  width: 60px;
+  max-width: 100%;
+  width: 65px;
   max-height: 50px;
 }
 
