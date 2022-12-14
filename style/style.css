@@ -622,6 +622,10 @@ main .mentor-main .btn:last-of-type a{
   background-size: cover;
   padding: 190px 0;
 }    
+.no-backg{
+  background-image: none;
+  padding: 90px 0 0 0;
+}
                                            
 .tabes .heading{
   text-align: center;
@@ -632,12 +636,18 @@ main .mentor-main .btn:last-of-type a{
   font-weight: 500;
   color: #fff;
 }
+.no-backg .heading h3{
+  color: rgb(232,0,0);
+}
 .tabes .heading h2{
   font-size: 40px;
   font-weight: 500;
   color: #fff;
   font-family: "Rubik", sans-serif;
   line-height: 1.2;
+}
+.no-backg .heading h2{
+  color: rgba(41, 5, 5, 1);
 }
 
 .tabes ul.btn-list{
@@ -653,26 +663,37 @@ main .mentor-main .btn:last-of-type a{
   height: 50px;
   text-align: center;
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px dotted #fff;
   line-height: 45px;
   transform: skew(-20deg);
-  transition: all 400ms ease-in-out;
   margin: 0 10px 20px;
   cursor: pointer;
   user-select: none;
+  transition: all 400ms ease-in-out;
 }
+.no-backg ul.btn-list li{
+  border-color: rgb(232,0,0);
+}
+
 .tabes ul.btn-list li a{
   text-decoration: none;
   color: #fff;
   font-family: "Karla", Sans-serif;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
+}
+.no-backg ul.btn-list li a{
+  color: rgb(232,0,0);
 }
 .tabes ul.btn-list li.active,.tabes ul.btn-list li:hover {
   background-color: rgba(232, 0, 0, 1);
-  border: 1px solid rgba(232, 0, 0, 1);
+  border-color:  rgba(232, 0, 0, 1);
   box-shadow: 0 35px 60px rgba(232, 0, 0, 0.25) ;
 }
+.no-backg ul.btn-list li.active a,.no-backg ul.btn-list li:hover a{
+  color: #fff;
+}
+
 .tabes .cards .row{
   display: flex;
   justify-content: flex-start;
@@ -1122,7 +1143,7 @@ box-shadow: rgba(0, 0, 0, 0.2) 30px 30px 60px;
   padding: 110px 0;
 }
 .menu-item-offer{
-  padding: 120px 0 70px;
+  padding: 70px 0 70px;
 }
 .offer .container{
   padding: 0;
@@ -4838,7 +4859,7 @@ ul.pagination li.disabled a{
   font-size: 17px;
   font-family: "Rubik", Sans-serif;
   font-weight: 700;
-  margin: 5px 0 0px 0;
+  margin: 5px 0 10px 0;
 }
 .blog .blog-details .auther .content .info p{
   color: rgba(69, 69, 69, 1);
@@ -4915,7 +4936,7 @@ ul.pagination li.disabled a{
   color: rgba(69, 69, 69, 1);
   font-size: 14px;
   font-family: 'Karla', sans-serif;
-  margin: 7px 0 10px 0;
+  margin: 5px 0 10px 0;
 }
 .blog .blog-details .comments-box .content .comment p{
   color: rgba(69, 69, 69, 1);
