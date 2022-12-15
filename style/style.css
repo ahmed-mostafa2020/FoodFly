@@ -317,6 +317,9 @@ header .topbar .topbar-right ul li:first-child::after{
   background: rgba(136, 136, 136, 0.04);
   transition: all 0.3s ease-in-out;
 }
+.navbar .side-nav .side-nav-header .close-menu i{
+  vertical-align: baseline;
+}
 .navbar .side-nav .side-nav-header .close-menu:hover{
   background: rgba(136, 136, 136, 0.1);
 }
