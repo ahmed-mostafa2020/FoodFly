@@ -3321,6 +3321,7 @@ footer .tail-bar p{
 }
 .price-table .box .table .head .product-header{
   min-width: 40.9%;
+  margin-right: 6px;
 }
 .price-table .box .table .body .col1{
   display: flex;
