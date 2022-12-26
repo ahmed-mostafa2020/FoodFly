@@ -3423,8 +3423,8 @@ footer .tail-bar p{
   font-size: 20px;
 }
 .price-table .box .table .body .col .quantity .plus-btn,
- .product .summary .mid-content .quantity .plus-btn{
-  right: 15px;
+.product .summary .mid-content .quantity .plus-btn{
+  right: 10px;
 }
 .price-table .box .table .body .col .quantity .plus-btn::before,
 .product .summary .mid-content .quantity .plus-btn::before{
@@ -3437,7 +3437,7 @@ footer .tail-bar p{
   width: 100%;
   text-align: center;
   height: 46px;
-  padding: 0 15px 0 25px;
+  padding: 0 15px 0 15px;
   border: 2px solid #F5F5F5;
   font-weight: 400;
   outline: 0;
